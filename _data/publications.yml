@@ -1,3 +1,18 @@
+- id: karl
+  title: "KARL: Kalman-Filter Assisted Reinforcement Learner for Dynamic Object Tracking and Grasping"
+  venue: IROS, 2025
+  description: "A framework for Eye-on-Hand (EoH) systems to grasp dynamically moving objects in full 6-DoF, with robustness to tracking and grasping failures."
+  # project_page: "https://lgmcts.github.io"
+  image: karl.png
+  # github: changhaonan/DPS
+  # pub_link: https://arxiv.org/abs/2309.15821
+  # pdf: DAP_IROS24.pdf
+  image_mouseover: karl.mp4
+  authors:
+    - kowndinya
+    - abdeslam
+    - jingjin 
+
 - id: dap
   title: "DAP: Diffusion-based Affordance Prediction for Multi-modality Storage "
   venue: IROS, 2024
