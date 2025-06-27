@@ -4,8 +4,8 @@
   description: "A framework for Eye-on-Hand (EoH) systems to grasp dynamically moving objects in full 6-DoF, with robustness to tracking and grasping failures."
   # project_page: "https://lgmcts.github.io"
   image: karl.png
-  # github: changhaonan/DPS
-  # pub_link: https://arxiv.org/abs/2309.15821
+  # github: arc-l/karl
+  pub_link: https://arxiv.org/abs/2506.15945
   # pdf: DAP_IROS24.pdf
   image_mouseover: karl.mp4
   authors:
