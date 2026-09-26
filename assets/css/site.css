@@ -45,6 +45,9 @@ h3 { font-size: 21px; line-height: 1.4; font-weight: 600; }
 .section-heading { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 26px 0; border-top: 1px solid var(--line); }
 .quiet-link { font-size: 15px; white-space: nowrap; }
 .quiet-link span { margin-left: 4px; }
+.ongoing-projects { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 36px; padding: 7px 0 36px; }
+.ongoing-project h3 { font-size: 21px; line-height: 1.4; font-weight: 500; margin-bottom: 10px; }
+.ongoing-project p { font-size: 17px; line-height: 1.65; color: var(--muted); }
 .publication { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 32px; padding: 24px 0; align-items: start; }
 .publication:first-child { padding-top: 7px; }
 .publication-visual { display: block; margin-top: 4px; }
@@ -107,6 +110,7 @@ h3 { font-size: 21px; line-height: 1.4; font-weight: 600; }
 .credits-page h1 { margin: 12px 0 26px; }
 .credits-page > p + p { margin-top: 20px; }
 @media (max-width: 800px) {
+  .ongoing-projects { grid-template-columns: 1fr; gap: 28px; }
   .wrapper { width: calc(100% - 48px); }
   .intro { grid-template-columns: 190px minmax(0, 1fr); gap: 32px; padding: 35px 0 40px; }
   .portrait { width: 190px; }
