@@ -64,7 +64,7 @@ def main():
         return r"\paper{" + tex(url) + "}{" + tex(title) + "}{" + author_text + "}{" + tex(venue) + "}{" + resource_text + "}"
 
     lines = [r"{\fontsize{26}{29}\selectfont " + tex(config["name"]) + r"}\par\vspace{5pt}",
-             r"{\sffamily Ph.D. student in Computer Science \enspace\textbar\enspace Rutgers University}\par\vspace{5pt}",
+             r"{\sffamily " + tex(config["position"]) + r" \enspace\textbar\enspace Rutgers University}\par\vspace{5pt}",
              r"{\small " + link("mailto:" + config["email"], config["email"]) + r"\enspace\textbar\enspace " + link(config["url"], "kowndinya2000.github.io") + r"\enspace\textbar\enspace " + link("https://scholar.google.com/citations?user=" + config["google_scholar"], "Google Scholar") + r"}\par",
              r"{\sffamily\scriptsize Updated " + tex(data["updated"]) + r"}\par",
              section("Research interests"), tex(data["research_interests"]),
