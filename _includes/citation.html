@@ -1,1 +1,13 @@
-<li><p class="citation-title"><a href="{{ include.paper.url }}">{% if include.paper.status == 'under-review' %}{{ include.paper.short_title }}: {% endif %}{{ include.paper.title }}</a></p><p class="authors">{% include authors.html paper=include.paper %}</p><p class="cv-detail">{{ include.paper.venue }}{% if include.paper.status == 'under-review' %} · Manuscript, {{ include.paper.year }}{% endif %}</p></li>
+{% assign paper_url = include.paper.pub_link | default: include.paper.pdf | default: include.paper.url %}
+{% unless paper_url contains '://' %}{% assign paper_url = paper_url | relative_url %}{% endunless %}
+<li>
+  <p class="citation-title"><a href="{{ paper_url }}">{% if include.paper.status == 'under-review' %}{{ include.paper.short_title }}: {% endif %}{{ include.paper.title }}</a></p>
+  <p class="authors">{% include authors.html paper=include.paper %}</p>
+  <p class="cv-detail">{{ include.paper.venue }}{% if include.paper.status == 'under-review' %} · Manuscript, {{ include.paper.year }}{% endif %}</p>
+  <div class="cv-resource-links" aria-label="Resources for {{ include.paper.short_title }}">
+    <a href="{{ paper_url }}">[Paper]</a>
+    {% if include.paper.project_page and include.paper.project_page != paper_url %}<a href="{{ include.paper.project_page }}">[Project]</a>{% endif %}
+    {% if include.paper.code %}<a href="{{ include.paper.code }}">[Code]</a>{% endif %}
+    {% if include.paper.data %}<a href="{{ include.paper.data }}">[Data]</a>{% endif %}
+  </div>
+</li>

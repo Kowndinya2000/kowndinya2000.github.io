@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.name }}</title>
   <meta name="description" content="{{ site.description | escape }}">
-  <meta name="theme-color" content="#faf9f6">
+  <meta name="theme-color" content="#ffffff">
   <link rel="canonical" href="{{ page.url | absolute_url }}">
   <meta property="og:type" content="website">
   <meta property="og:title" content="{{ site.name }} · Robot learning &amp; manipulation">
@@ -14,13 +14,13 @@
   <meta property="og:image" content="{{ '/images/portrait.jpg' | absolute_url }}">
   <link rel="icon" href="{{ '/assets/images/favicon.svg' | relative_url }}" type="image/svg+xml">
   <link rel="preload" href="{{ '/assets/fonts/dm-sans.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}?v=20260926">
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}?v=20260926-2">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header wrapper">
-    <a class="monogram" href="{{ '/' | relative_url }}" aria-label="Kowndinya Boyalakuntla home">KB<span>.</span></a>
     <nav aria-label="Main navigation">
+      <a href="{{ '/' | relative_url }}">Home</a>
       <a href="{{ '/' | relative_url }}#research">Research</a>
       <a href="{{ '/' | relative_url }}#background">Background</a>
       <a class="nav-cv" href="{{ '/cv.html' | relative_url }}"{% if page.url == '/cv.html' %} aria-current="page"{% endif %}>CV <span aria-hidden="true">↗</span></a>

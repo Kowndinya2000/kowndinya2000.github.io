@@ -46,9 +46,14 @@ def main():
         return " ".join(author[p] for p in ("first_name", "middle_name", "last_name") if author.get(p))
 
     def paper(p):
-        url = p.get("pub_link", p["url"])
+        url = p.get("pub_link") or p.get("pdf") or p["url"]
         if not url.startswith("http"):
             url = config["url"] + "/" + url
+        resources = [("Paper", url)]
+        for key, label in (("project_page", "Project"), ("code", "Code"), ("data", "Data")):
+            if p.get(key) and p[key] != url:
+                resources.append((label, p[key]))
+        resource_text = r"\enspace ".join(r"\resource{" + tex(target) + "}{" + label + "}" for label, target in resources)
         title = p["title"]
         if p["status"] == "under-review":
             title = p["short_title"] + ": " + title
@@ -56,12 +61,12 @@ def main():
         venue = p["venue"]
         if p["status"] == "under-review":
             venue = "Manuscript, " + str(p["year"]) + ". " + venue + "."
-        return r"\paper{" + tex(url) + "}{" + tex(title) + "}{" + author_text + "}{" + tex(venue) + "}"
+        return r"\paper{" + tex(url) + "}{" + tex(title) + "}{" + author_text + "}{" + tex(venue) + "}{" + resource_text + "}"
 
     lines = [r"{\fontsize{26}{29}\selectfont " + tex(config["name"]) + r"}\par\vspace{5pt}",
-             r"{\sffamily\color{muted}Ph.D. student in Computer Science \enspace\textbar\enspace Rutgers University}\par\vspace{5pt}",
+             r"{\sffamily Ph.D. student in Computer Science \enspace\textbar\enspace Rutgers University}\par\vspace{5pt}",
              r"{\small " + link("mailto:" + config["email"], config["email"]) + r"\enspace\textbar\enspace " + link(config["url"], "kowndinya2000.github.io") + r"\enspace\textbar\enspace " + link("https://scholar.google.com/citations?user=" + config["google_scholar"], "Google Scholar") + r"}\par",
-             r"{\sffamily\scriptsize\color{muted}Updated " + tex(data["updated"]) + r"}\par",
+             r"{\sffamily\scriptsize Updated " + tex(data["updated"]) + r"}\par",
              section("Research interests"), tex(data["research_interests"]),
              section("Education")]
     for school in read("_data/education.yml"):

@@ -2,13 +2,12 @@
   {% if include.paper.group != 'earlier' %}
   <a class="publication-visual" href="{{ include.paper.url }}" aria-label="Explore {{ include.paper.short_title }}">
     <img src="{{ include.paper.image | relative_url }}" alt="{{ include.paper.image_alt | default: include.paper.title | escape }}" width="640" height="400" loading="lazy" decoding="async">
-    <span class="visual-link" aria-hidden="true">{{ include.paper.short_title }} <span>↗</span></span>
   </a>
   {% endif %}
   <div class="publication-body">
-    <div class="publication-meta"><span>{{ include.paper.short_title }}</span><span class="venue{% if include.paper.status == 'under-review' %} venue--review{% endif %}">{{ include.paper.venue }}</span></div>
-    <h3><a href="{{ include.paper.url }}">{{ include.paper.title }}</a></h3>
+    <h3><a href="{{ include.paper.url }}">{% if include.paper.status == 'under-review' %}{{ include.paper.short_title }}: {% endif %}{{ include.paper.title }}</a></h3>
     <p class="authors">{% include authors.html paper=include.paper %}</p>
+    <p class="venue">{{ include.paper.venue }}</p>
     <p class="publication-description">{{ include.paper.description }}</p>
     <div class="paper-links" aria-label="Resources for {{ include.paper.short_title }}">
       {% if include.paper.project_page %}<a href="{{ include.paper.project_page }}">Project <span aria-hidden="true">↗</span></a>{% endif %}
