@@ -10,6 +10,22 @@ awards:
 - date: '2019'
   title: Gold Medal, Inter IIT Technical Meet 8.0
   detail: Ashoka’s Tech for Change Challenge at IIT Roorkee; high-preparation event among 20 IITs.
+teaching:
+- name: Rutgers University
+  role: Instructor
+  dates: Fall 2026
+  course: 'CS440: Introduction to Artificial Intelligence'
+  level: Undergraduate
+  url: https://kowndinya2000.github.io/cs440-fa26/
+reviewing:
+- venue: IROS
+  years: '2025, 2026'
+- venue: CoRL
+  years: '2026'
+- venue: IJRR
+  years: '2026'
+- venue: ICAPS
+  years: '2026'
 leadership:
 - name: Google Developer Student Clubs, IIT Tirupati
   role: Community Lead

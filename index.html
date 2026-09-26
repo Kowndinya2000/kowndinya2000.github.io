@@ -27,6 +27,14 @@ layout: default
   </details>
 </section>
 
+<section class="teaching-section" id="teaching" aria-labelledby="teaching-heading">
+  <div class="section-heading"><h2 id="teaching-heading">Teaching &amp; service</h2></div>
+  {% for course in site.data.cv.teaching %}
+  <div class="teaching-entry"><h3><a href="{{ course.url }}">{{ course.course }}</a></h3><p>{{ course.role }} · {{ course.level }} course · {{ course.name }} · {{ course.dates }}</p></div>
+  {% endfor %}
+  <p class="reviewing-note"><strong>Reviewer:</strong> {% include reviewing.html %}</p>
+</section>
+
 <section class="background-section" id="background" aria-labelledby="background-heading">
   <div class="section-heading"><h2 id="background-heading">Background</h2><a class="quiet-link" href="{{ '/cv.html' | relative_url }}">Full CV <span aria-hidden="true">↗</span></a></div>
   <div class="education-list">{% for school in site.data.education %}
