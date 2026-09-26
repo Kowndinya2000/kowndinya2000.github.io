@@ -6,7 +6,7 @@ Content is stored in `_config.yml` and `_data/`. Run `bundle exec jekyll serve` 
 
 ## Curriculum vitae
 
-The website and PDF share the same YAML content. With Python 3 and TeX Live installed:
+The website and PDF share the same YAML content. Ongoing project titles and CV bullets are maintained in `_data/ongoing_research.yml` (`title` and `cv_points`); the homepage uses each project’s longer `description`. With Python 3 and TeX Live installed:
 
 ```sh
 python -m pip install -r cv/requirements.txt

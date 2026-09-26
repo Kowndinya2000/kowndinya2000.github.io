@@ -1,5 +1,13 @@
 - id: mocap-planning
   title: Motion Abstractions for World-Model Planning
+  cv_points:
+    - >-
+      Investigating action abstractions learned from human motion capture that let a planner choose
+      motion and duration using a learned world model, with reference trajectories tracked by a
+      closed-loop controller.
+    - >-
+      Studying when these abstractions improve humanoid locomotion planning under matched time and
+      compute budgets, toward long-horizon loco-manipulation.
   description: >-
     I am investigating how human motion capture can provide useful action abstractions for planning
     with learned world models. A learned motion representation maps the planner’s choice of motion
@@ -10,6 +18,14 @@
 
 - id: q-planning-recovery
   title: Learning Recovery Proposals for Q-Guided Planning
+  cv_points:
+    - >-
+      Exploring lightweight, behaviorally diverse recovery proposals around a frozen imitation policy,
+      selected by a shared task-value critic and retained at deployment.
+    - >-
+      Planning comparisons with Q-only selection, a single residual policy, and search without learned
+      proposals to assess recovery, nominal-task performance, and repeated-search cost under matched
+      interaction and compute budgets.
   description: >-
     I am exploring how to help a frozen imitation policy recover when it rarely proposes useful
     actions. The idea is to learn a small set of behaviorally diverse recovery proposals and use

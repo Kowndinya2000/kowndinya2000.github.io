@@ -4,23 +4,33 @@
 {\small \href{mailto:kb1204@scarletmail.rutgers.edu}{kb1204@scarletmail.rutgers.edu}\enspace\textbar\enspace \href{https://kowndinya2000.github.io}{kowndinya2000.github.io}\enspace\textbar\enspace \href{https://scholar.google.com/citations?user=tv9b9Y4AAAAJ}{Google Scholar}}\par
 {\sffamily\scriptsize Updated September 2026}\par
 \cvsection{Research interests}
-I work on learning and planning for robot manipulation and whole-body control. My current research explores learned world-models and how to turn human motion capture into useful action abstractions for long-horizon planning in humanoid loco-manipulation.
+I work on learning and planning for robot manipulation and whole-body control. My current research explores action abstractions from human motion capture for planning with learned world models, and Q-guided recovery for frozen imitation policies, toward reliable humanoid loco-manipulation.
 \cvsection{Education}
-\cventry{Rutgers University}{Sep 2024 -- present}{Ph.D. in Computer Science; GPA: 3.85/4.0}{Advisor: Prof. Abdeslam Boularias}
-\cventry{Rutgers University}{2022 -- 2024}{M.S. in Computer Science; GPA: 3.8/4.0}{Advisor: Prof. Abdeslam Boularias\par {\small Thesis: Context-Aware Entity Grounding with Open-Vocabulary 3D Scene Graphs.}}
-\cventry{Indian Institute of Technology Tirupati}{Jul 2017 -- Jul 2021}{B.Tech. in Computer Science and Engineering; GPA: 8.42/10.0}{Advisors: Prof. Sridhar Chimalakonda, Prof. Kalidas Yeturu}
+\educationentry{Rutgers University}{Sep 2024 -- present}{Ph.D. in Computer Science; GPA: 3.85/4.0}{Advisor: Prof. Abdeslam Boularias}
+\educationentry{Rutgers University}{2022 -- 2024}{M.S. in Computer Science; GPA: 3.8/4.0}{Advisor: Prof. Abdeslam Boularias\par {\small Thesis: Context-Aware Entity Grounding with Open-Vocabulary 3D Scene Graphs.}}
+\educationentry{Indian Institute of Technology Tirupati}{Jul 2017 -- Jul 2021}{B.Tech. in Computer Science and Engineering; GPA: 8.42/10.0}{Advisors: Prof. Sridhar Chimalakonda, Prof. Kalidas Yeturu}
 \cvsection{Manuscripts under review}
 \begin{papers}
 \paper{https://icra27-pl-mpc.github.io/static/paper/pl-mpc.pdf}{PL-MPC: Beyond Policy Alignment: Closing the Planning--Learning Loop for Robot Control with Learned World Models}{\textbf{Kowndinya Boyalakuntla}, Yuhan Liu, Abdeslam Boularias}{Manuscript, 2026. Under review at ICRA 2027.}{\resource{https://icra27-pl-mpc.github.io/static/paper/pl-mpc.pdf}{Paper}\enspace \resource{https://icra27-pl-mpc.github.io/}{Project}\enspace \resource{https://anonymous.4open.science/r/PL-MPC/README.md}{Code}}
 \paper{https://icra27-trace.github.io/static/paper/trace.pdf}{TRACE: Plan-Conditioned Imitation for Robust Object Retrieval under Self-Occlusion in Dense Clutter}{\textbf{Kowndinya Boyalakuntla}, Ajinkya Pawar, Abdeslam Boularias, Jingjin Yu}{Manuscript, 2026. Under review at ICRA 2027.}{\resource{https://icra27-trace.github.io/static/paper/trace.pdf}{Paper}\enspace \resource{https://icra27-trace.github.io/}{Project}\enspace \resource{https://anonymous.4open.science/r/TRACE-27/README.md}{Code}}
 \end{papers}
+\cvsection{Ongoing research projects}
+\needspace{85pt}\textbf{Motion Abstractions for World-Model Planning}\hfill{\small Ongoing}\par
+\begin{itemize}[leftmargin=13pt,itemsep=2pt,parsep=0pt,topsep=3pt]
+\item Investigating action abstractions learned from human motion capture that let a planner choose motion and duration using a learned world model, with reference trajectories tracked by a closed-loop controller.
+\item Studying when these abstractions improve humanoid locomotion planning under matched time and compute budgets, toward long-horizon loco-manipulation.
+\end{itemize}\par\addvspace{4pt}
+\needspace{85pt}\textbf{Learning Recovery Proposals for Q-Guided Planning}\hfill{\small Ongoing}\par
+\begin{itemize}[leftmargin=13pt,itemsep=2pt,parsep=0pt,topsep=3pt]
+\item Exploring lightweight, behaviorally diverse recovery proposals around a frozen imitation policy, selected by a shared task-value critic and retained at deployment.
+\item Planning comparisons with Q-only selection, a single residual policy, and search without learned proposals to assess recovery, nominal-task performance, and repeated-search cost under matched interaction and compute budgets.
+\end{itemize}\par\addvspace{4pt}
 \cvsection{Research experience}
 \cventry{Rutgers University}{Jan 2023 -- present}{Graduate Student Researcher · New Brunswick, NJ}{Research in robot learning, visual perception, and manipulation with Prof. Abdeslam Boularias. Work includes scene grounding, language-guided rearrangement, dynamic grasping, learned world models, and manipulation under self-occlusion.}
 \cventry{RISHA Lab, IIT Tirupati}{Dec 2019 -- May 2022}{Undergraduate Student Researcher · Tirupati, India}{Research in empirical software engineering and human--computer interaction, including tools for evaluating software repositories and generating energy-aware mobile applications.}
 \cventry{University of Waterloo}{Jul 2020 -- Sep 2020}{Visiting Scholar · Waterloo, Canada}{Improved RepoReaper for large-scale GitHub repository analysis, increasing recall and reducing false positives without relying on GHTorrent.}
 \cvsection{Teaching}
 \textbf{Instructor, Rutgers University}\hfill{\small Fall 2026}\par \href{https://kowndinya2000.github.io/cs440-fa26/}{CS440: Introduction to Artificial Intelligence}\enspace {\small Undergraduate course}\par
-\newpage
 \cvsection{Peer-reviewed publications}
 \begin{papers}
 \paper{https://arxiv.org/abs/2506.15945}{KARL: Kalman-Filter Assisted Reinforcement Learner for Dynamic Object Tracking and Grasping}{\textbf{Kowndinya Boyalakuntla}, Abdeslam Boularias, Jingjin Yu}{IROS, 2025}{\resource{https://arxiv.org/abs/2506.15945}{Paper}\enspace \resource{https://github.com/arc-l/karl}{Code}}

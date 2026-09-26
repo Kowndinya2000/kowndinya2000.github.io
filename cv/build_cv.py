@@ -31,8 +31,8 @@ def section(title):
     return r"\cvsection{" + tex(title) + "}"
 
 
-def entry(title, date, subtitle, body):
-    return r"\cventry{" + tex(title) + "}{" + tex(date) + "}{" + tex(subtitle) + "}{" + body + "}"
+def entry(title, date, subtitle, body, command="cventry"):
+    return "\\" + command + "{" + tex(title) + "}{" + tex(date) + "}{" + tex(subtitle) + "}{" + body + "}"
 
 
 def main():
@@ -74,16 +74,22 @@ def main():
         body = ("Advisors: " if len(school["advisors"]) > 1 else "Advisor: ") + ", ".join(tex("Prof. " + name(a)) for a in school["advisors"])
         if school.get("detail"):
             body += r"\par {\small " + tex(school["detail"]) + "}"
-        lines.append(entry(school["name"], school["dates"], subtitle, body))
+        lines.append(entry(school["name"], school["dates"], subtitle, body, command="educationentry"))
     lines.extend([section("Manuscripts under review"), r"\begin{papers}"])
     lines.extend(paper(p) for p in publications if p["status"] == "under-review")
-    lines.extend([r"\end{papers}", section("Research experience")])
+    lines.extend([r"\end{papers}", section("Ongoing research projects")])
+    for project in read("_data/ongoing_research.yml"):
+        lines.append(r"\needspace{85pt}\textbf{" + tex(project["title"]) + r"}\hfill{\small Ongoing}\par")
+        lines.append(r"\begin{itemize}[leftmargin=13pt,itemsep=2pt,parsep=0pt,topsep=3pt]")
+        lines.extend(r"\item " + tex(point) for point in project["cv_points"])
+        lines.append(r"\end{itemize}\par\addvspace{4pt}")
+    lines.append(section("Research experience"))
     for job in read("_data/employment.yml"):
         lines.append(entry(job["company"], job["dates"], job["role"] + " · " + job["location"], tex(job["description"])))
     lines.append(section("Teaching"))
     for course in data["teaching"]:
         lines.append(r"\textbf{" + tex(course["role"] + ", " + course["name"]) + r"}\hfill{\small " + tex(course["dates"]) + r"}\par " + link(course["url"], course["course"]) + r"\enspace {\small " + tex(course["level"] + " course") + r"}\par")
-    lines.extend([r"\newpage", section("Peer-reviewed publications"), r"\begin{papers}"])
+    lines.extend([section("Peer-reviewed publications"), r"\begin{papers}"])
     lines.extend(paper(p) for p in publications if p["status"] == "published")
     lines.extend([r"\end{papers}", section("Honors & awards")])
     for award in data["awards"]:
