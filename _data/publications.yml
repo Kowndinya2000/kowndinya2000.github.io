@@ -16,8 +16,9 @@
   url: https://icra27-pl-mpc.github.io/
   pdf: https://icra27-pl-mpc.github.io/static/paper/pl-mpc.pdf
   code: https://anonymous.4open.science/r/PL-MPC/README.md
-  image: assets/images/pl-mpc.webp
-  image_alt: KUKA robot aligning a wrench with a nut in a real-world PL-MPC experiment.
+  image: assets/images/pl-mpc-architecture.webp
+  image_full: assets/images/pl-mpc-architecture.webp
+  image_alt: PL-MPC architecture showing planning, replay, world-model and value learning, and actor learning.
 - id: trace
   short_title: TRACE
   title: Plan-Conditioned Imitation for Robust Object Retrieval under Self-Occlusion in Dense Clutter
@@ -36,9 +37,9 @@
   url: https://icra27-trace.github.io/
   pdf: https://icra27-trace.github.io/static/paper/trace.pdf
   code: https://anonymous.4open.science/r/TRACE-27/README.md
-  data: https://huggingface.co/datasets/anonym-scholar/trace
-  image: assets/images/trace.webp
-  image_alt: First frame of a TRACE real-robot demonstration, showing the arm and cluttered workspace.
+  image: assets/images/trace-architecture.webp
+  image_full: assets/images/trace-architecture.webp
+  image_alt: TRACE architecture showing the frozen teacher plan, partial observations, student memory, and push or grasp decision.
 - id: karl
   title: 'KARL: Kalman-Filter Assisted Reinforcement Learner for Dynamic Object Tracking and Grasping'
   venue: IROS, 2025

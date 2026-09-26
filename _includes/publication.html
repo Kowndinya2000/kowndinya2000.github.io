@@ -1,6 +1,6 @@
 <article class="publication{% if include.paper.group == 'earlier' %} publication--earlier{% endif %}" id="{{ include.paper.id }}">
   {% if include.paper.group != 'earlier' %}
-  <a class="publication-visual" href="{{ include.paper.url }}" aria-label="Explore {{ include.paper.short_title }}">
+  <a class="publication-visual" href="{% if include.paper.image_full %}{{ include.paper.image_full | relative_url }}{% else %}{{ include.paper.url }}{% endif %}" aria-label="{% if include.paper.image_full %}Open the full {{ include.paper.short_title }} architecture figure{% else %}Explore {{ include.paper.short_title }}{% endif %}"{% if include.paper.image_full %} target="_blank" rel="noopener"{% endif %}>
     <img src="{{ include.paper.image | relative_url }}" alt="{{ include.paper.image_alt | default: include.paper.title | escape }}" width="640" height="400" loading="lazy" decoding="async">
   </a>
   {% endif %}

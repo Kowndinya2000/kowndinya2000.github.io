@@ -79,6 +79,7 @@ h3 { font-size: 21px; line-height: 1.4; font-weight: 600; }
 .education-row div p { font-size: 17px; color: var(--muted); margin-top: 2px; }
 .background-note { margin-top: 20px; color: var(--muted); font-size: 16px; max-width: 850px; }
 .site-footer { border-top: 1px solid var(--line); display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 25px 0 30px; color: var(--muted); font-size: 14px; }
+.site-updated { display: block; margin-top: 4px; }
 .site-footer div { display: flex; flex-wrap: wrap; gap: 22px; }
 .site-footer a { color: var(--muted); }
 .cv-page { --accent: #252525; --heading: #252525; --muted: #565656; max-width: 900px; margin: 0 auto; padding: 46px 0 60px; }
