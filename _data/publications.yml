@@ -46,6 +46,7 @@
     learning.
   image: images/karl.png
   pub_link: https://arxiv.org/abs/2506.15945
+  code: https://github.com/arc-l/karl
   authors:
   - kowndinya
   - abdeslam
