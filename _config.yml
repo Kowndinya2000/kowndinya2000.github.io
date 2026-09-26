@@ -1,66 +1,26 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you: 
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
 title: Kowndinya Boyalakuntla
 name: Kowndinya Boyalakuntla
-position: Ph.D. Student
+position: Ph.D. student in Computer Science
 email: kb1204@scarletmail.rutgers.edu
-description: >-
-  I am a graduate student at [Rutgers University](https://www.rutgers.edu/), where I work on robot manipulation and language-guided robotics.
-  I am advised by [Jingjin Yu](https://www.cs.rutgers.edu/people/professors/details/jingjin-yu).
-
-  Previously, I was an undergraduate student at the [IIT Tirupati](https://www.iittp.ac.in/) advised by
-  [Sridhar Chimalakonda](https://iittp.ac.in/dr-sridhar-chimalakonda) and
-  [Kalidas Yeturu](https://iittp.ac.in/dr-kalidas-yeturu).
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://kowndinya2000.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+description: Kowndinya Boyalakuntla is a Computer Science Ph.D. student at Rutgers University, advised
+  by Prof. Abdeslam Boularias. Research in robot learning, planning, and manipulation.
+baseurl: ''
+url: https://kowndinya2000.github.io
 twitter_username: KowndinyaB70872
 github_username: kowndinya2000
 linkedin_id: kowndinya-b-b4b254155
 google_scholar: tv9b9Y4AAAAJ
-google_analytics: ZYFHc6QAAAAJ
-
-# Build settings
-theme: minima
-plugins:
-  - jekyll-feed
-
-sass:
-  style: compact
-
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+timezone: America/New_York
+markdown: kramdown
+exclude:
+- Gemfile
+- Gemfile.lock
+- README.md
+- cv/build_cv.py
+- cv/requirements.txt
+- cv/Makefile
+- cv/content.tex
+- cv/kowndinya-cv.tex
+- css
+- js
+- _sass

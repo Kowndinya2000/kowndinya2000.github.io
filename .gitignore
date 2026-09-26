@@ -69,3 +69,11 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# LaTeX build artifacts
+cv/*.aux
+cv/*.log
+cv/*.out
+cv/*.fls
+cv/*.fdb_latexmk
+cv/*.pdf

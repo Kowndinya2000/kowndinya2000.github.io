@@ -1,14 +1,14 @@
 kowndinya:
   first_name: Kowndinya
   last_name: Boyalakuntla
-  website: https://kowndinya2000.github.io/kowndinya
+  website: https://kowndinya2000.github.io/
   is_me: true
 haonan:
   first_name: Haonan
   last_name: Chang
   website: https://scholar.google.com/citations?user=fb-yr1YAAAAJ&hl=zh-CN
 shiyang:
-  first_name: Shiyang 
+  first_name: Shiyang
   last_name: Lu
   website: https://scholar.google.com/citations?user=pDH5AcsAAAAJ&hl=en
 siwei:
@@ -76,7 +76,7 @@ jingjin:
 abdeslam:
   first_name: Abdeslam
   last_name: Boularias
-  website: http://www.abdeslam.net/
+  website: https://www.abdeslam.net/
 akhila:
   first_name: Akhila
   middle_name: Sri Manasa
@@ -120,14 +120,18 @@ vidya:
   website: https://www.linkedin.com/in/vidya-rodge/?originalSubdomain=in
 ramya:
   first_name: Ramya
-  last_name: Velaga 
+  last_name: Velaga
   website: https://in.linkedin.com/in/ramyavelaga
 reena:
   first_name: Reena
   middle_name: Abasaheb
   last_name: Deshmukh
-  website: ""
+  website: ''
 chandrasekaran:
   first_name: Chandrasekaran
   last_name: Kalicheti
-  website: ""
+  website: ''
+ajinkya:
+  first_name: Ajinkya
+  last_name: Pawar
+  website: ''

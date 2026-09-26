@@ -1,138 +1,203 @@
+- id: pl-mpc
+  short_title: PL-MPC
+  title: 'Beyond Policy Alignment: Closing the Planning–Learning Loop for Robot Control with Learned World
+    Models'
+  authors:
+  - kowndinya
+  - yuhan
+  - abdeslam
+  year: 2026
+  venue: Under review at ICRA 2027
+  status: under-review
+  group: robotics
+  description: Closing the loop between planning and learning for humanoid control and zero-shot sim-to-real
+    manipulation.
+  project_page: https://icra27-pl-mpc.github.io/
+  url: https://icra27-pl-mpc.github.io/
+  pdf: https://icra27-pl-mpc.github.io/static/paper/pl-mpc.pdf
+  code: https://anonymous.4open.science/r/PL-MPC/README.md
+  image: assets/images/pl-mpc.webp
+  image_alt: KUKA robot aligning a wrench with a nut in a real-world PL-MPC experiment.
+- id: trace
+  short_title: TRACE
+  title: Plan-Conditioned Imitation for Robust Object Retrieval under Self-Occlusion in Dense Clutter
+  authors:
+  - kowndinya
+  - ajinkya
+  - abdeslam
+  - jingjin
+  year: 2026
+  venue: Under review at ICRA 2027
+  status: under-review
+  group: robotics
+  description: One initial plan, memory, and partial feedback guide target retrieval through dense clutter
+    when the robot blocks its own view.
+  project_page: https://icra27-trace.github.io/
+  url: https://icra27-trace.github.io/
+  pdf: https://icra27-trace.github.io/static/paper/trace.pdf
+  code: https://anonymous.4open.science/r/TRACE-27/README.md
+  data: https://huggingface.co/datasets/anonym-scholar/trace
+  image: assets/images/trace.webp
+  image_alt: First frame of a TRACE real-robot demonstration, showing the arm and cluttered workspace.
 - id: karl
-  title: "KARL: Kalman-Filter Assisted Reinforcement Learner for Dynamic Object Tracking and Grasping"
+  title: 'KARL: Kalman-Filter Assisted Reinforcement Learner for Dynamic Object Tracking and Grasping'
   venue: IROS, 2025
-  description: "A framework for Eye-on-Hand (EoH) systems to grasp dynamically moving objects in full 6-DoF, with robustness to tracking and grasping failures."
-  # project_page: "https://lgmcts.github.io"
-  image: karl.png
-  # github: arc-l/karl
+  description: Tracking and grasping moving objects with an eye-in-hand camera, a Kalman filter, and reinforcement
+    learning.
+  image: images/karl.png
   pub_link: https://arxiv.org/abs/2506.15945
-  # pdf: DAP_IROS24.pdf
-  image_mouseover: karl.mp4
   authors:
-    - kowndinya
-    - abdeslam
-    - jingjin 
-
+  - kowndinya
+  - abdeslam
+  - jingjin
+  year: 2025
+  group: robotics
+  status: published
+  url: https://arxiv.org/abs/2506.15945
+  short_title: KARL
 - id: dap
-  title: "DAP: Diffusion-based Affordance Prediction for Multi-modality Storage "
+  title: 'DAP: Diffusion-based Affordance Prediction for Multi-modality Storage'
   venue: IROS, 2024
-  description: "A computationally efficient approach to storing objects in multimodal containers."
-  # project_page: "https://lgmcts.github.io"
-  image: dap.png
-  github: changhaonan/DPS
-  # pub_link: https://arxiv.org/abs/2309.15821
-  pdf: DAP_IROS24.pdf
-  # image_mouseover: lgmcts.mp4
+  description: Diffusion-based affordance prediction for placing objects in containers with different
+    storage modes.
+  image: images/dap.png
+  pdf: pdfs/DAP_IROS24.pdf
   authors:
-    - haonan 
-    - kowndinya
-    - yuhan
-    - xinyu
-    - liam
-    - abdeslam
-
+  - haonan
+  - kowndinya
+  - yuhan
+  - xinyu
+  - liam
+  - abdeslam
+  year: 2024
+  group: robotics
+  status: published
+  code: https://github.com/changhaonan/DPS
+  url: pdfs/DAP_IROS24.pdf
+  short_title: DAP
 - id: lgmcts
-  title: "LGMCTS: Language-Guided Monte-Carlo Tree Search for Executable Semantic Object Rearrangement"
+  title: 'LGMCTS: Language-Guided Monte-Carlo Tree Search for Executable Semantic Object Rearrangement'
   venue: IROS, 2024
-  description: "A novel framework to the executable complex geometric rearrangement problem."
-  project_page: "https://lgmcts.github.io"
-  image: lgmcts.png
-  github: changhaonan/LGMCTS
+  description: Turning language instructions into executable object rearrangements through geometric reasoning
+    and tree search.
+  project_page: https://lgmcts.github.io
+  image: images/lgmcts.png
   pub_link: https://arxiv.org/abs/2309.15821
-  pdf: LGMCTS_IROS24.pdf
-  image_mouseover: lgmctsv.mp4
+  pdf: pdfs/LGMCTS_IROS24.pdf
   authors:
-    - haonan
-    - kai 
-    - kowndinya
-    - alex
-    - baichuan
-    - harish
-    - jingjin
-    - abdeslam
-
+  - haonan
+  - kai
+  - kowndinya
+  - alex
+  - baichuan
+  - harish
+  - jingjin
+  - abdeslam
+  year: 2024
+  group: robotics
+  status: published
+  code: https://github.com/changhaonan/LGMCTS
+  url: https://lgmcts.github.io
+  short_title: LGMCTS
 - id: ovsg
-  title: "Context-Aware Entity Grounding with Open-Vocabulary 3D Scene Graphs"
+  title: Context-Aware Entity Grounding with Open-Vocabulary 3D Scene Graphs
   venue: CoRL, 2023
-  description: "An Open-Vocabulary 3D Scene Graph (OVSG), a formal framework for grounding a variety of entities such as object instances, agents, and regions, with free-form text-based queries."
-  project_page: "https://ovsg-l.github.io"
-  image: ovsg-q.png
-  github: changhaonan/OVSG
+  description: Grounding free-form language queries in open-vocabulary 3D scene graphs.
+  project_page: https://ovsg-l.github.io
+  image: images/ovsg-q.png
   pub_link: https://arxiv.org/abs/2309.15940
-  image_mouseover: ovsg-nav.mp4
-  pdf: OVSG__CoRL2023.pdf
+  pdf: pdfs/OVSG__CoRL2023.pdf
   authors:
-    - haonan
-    - kowndinya
-    - shiyang
-    - siwei
-    - eric
-    - shreesh
-    - shijie
-    - adeeb
-    - lifeng
-    - kostas
-    - abdeslam
-
+  - haonan
+  - kowndinya
+  - shiyang
+  - siwei
+  - eric
+  - shreesh
+  - shijie
+  - adeeb
+  - lifeng
+  - kostas
+  - abdeslam
+  year: 2023
+  group: robotics
+  status: published
+  code: https://github.com/changhaonan/OVSG
+  url: https://ovsg-l.github.io
+  short_title: OVSG
 - id: egen
-  title: "eGEN: an energy-saving modeling language and code generator for location-sensing of mobile apps"
+  title: 'eGEN: an energy-saving modeling language and code generator for location-sensing of mobile apps'
   venue: ESEC/FSE, 2022
-  description: "A tool to specify energy-aware self-adaptive location-sensing strategies helping developers write battery-aware code for mobile apps."
-  github: Kowndinya2000/egen
+  description: A tool to specify energy-aware self-adaptive location-sensing strategies helping developers
+    write battery-aware code for mobile apps.
   pub_link: https://dl.acm.org/doi/abs/10.1145/3540250.3558914
-  image: egen.webp
-  project_page: "https://"
-  image_mouseover: egen.mp4
+  image: images/egen.webp
   authors:
-    - kowndinya
-    - marimuthu
-    - chandrasekaran
-    - sridhar
-
+  - kowndinya
+  - marimuthu
+  - sridhar
+  - chandrasekaran
+  year: 2022
+  group: earlier
+  status: published
+  code: https://github.com/Kowndinya2000/egen
+  url: https://dl.acm.org/doi/abs/10.1145/3540250.3558914
+  short_title: eGEN
 - id: repoquester
-  title: "RepoQuester: A Tool Towards Evaluating GitHub Projects"
+  title: 'RepoQuester: A Tool Towards Evaluating GitHub Projects'
   venue: ICSME, 2022
-  description: "A command-line tool to assist developers in evaluating projects by providing quantitative scores for ten metrics that span project collaboration, quality and maintenance."
-  github: Kowndinya2000/Repoquester
+  description: A command-line tool to assist developers in evaluating projects by providing quantitative
+    scores for ten metrics that span project collaboration, quality and maintenance.
   pub_link: https://ieeexplore.ieee.org/abstract/document/9978187
-  image: repoquester.webp
-  project_page: "https://"
-  image_mouseover: repoquester.mp4
+  image: images/repoquester.webp
   authors:
-    - kowndinya
-    - meiyappan
-    - sridhar
-    - nuthan
-
+  - kowndinya
+  - meiyappan
+  - sridhar
+  - nuthan
+  year: 2022
+  group: earlier
+  status: published
+  code: https://github.com/Kowndinya2000/Repoquester
+  url: https://ieeexplore.ieee.org/abstract/document/9978187
+  short_title: RepoQuester
 - id: gitq
-  title: "GitQ-towards using badges as visual cues for GitHub projects"
+  title: GitQ-towards using badges as visual cues for GitHub projects
   venue: ICPC, 2022
-  description: "A Chrome plugin to augment GitHub with badges that deliver visual cues quantifying the project's architecture and maintenance."
-  github: gitq-for-github/plugin
+  description: A Chrome plugin to augment GitHub with badges that deliver visual cues quantifying the
+    project's architecture and maintenance.
   pub_link: https://dl.acm.org/doi/abs/10.1145/3524610.3527876
-  image: gitq-l.png
-  project_page: "https://"
-  image_mouseover: gitq.mp4
+  image: images/gitq-l.png
   authors:
-    - akhila
-    - kowndinya
-    - sridhar
-
+  - akhila
+  - kowndinya
+  - sridhar
+  year: 2022
+  group: earlier
+  status: published
+  code: https://github.com/gitq-for-github/plugin
+  url: https://dl.acm.org/doi/abs/10.1145/3524610.3527876
+  short_title: GitQ
 - id: annotator
-  title: "A Platform for Large Scale Auto Annotation of Scanned Documents Featuring Real-Time Model Building and Model Pooling"
+  title: A Platform for Large Scale Auto Annotation of Scanned Documents Featuring Real-Time Model Building
+    and Model Pooling
   venue: CVIP, 2021
-  description: "We report here a platform and a model building algorithm that does auto-annotation of documents by building models in real-time."
-  github: Kowndinya2000/annotator
+  description: We report here a platform and a model building algorithm that does auto-annotation of documents
+    by building models in real-time.
   pub_link: https://link.springer.com/chapter/10.1007/978-3-031-11346-8_6
-  image: annotator.webp
-  project_page: "https://"
-  image_mouseover: annotator.mp4
+  image: images/annotator.webp
   authors:
-    - prashanth
-    - kowndinya
-    - vijay
-    - teja
-    - vidya
-    - ramya
-    - reena
-    - kalidas
+  - prashanth
+  - kowndinya
+  - vijay
+  - teja
+  - vidya
+  - ramya
+  - reena
+  - kalidas
+  year: 2021
+  group: earlier
+  status: published
+  code: https://github.com/Kowndinya2000/annotator
+  url: https://link.springer.com/chapter/10.1007/978-3-031-11346-8_6
+  short_title: Document annotation

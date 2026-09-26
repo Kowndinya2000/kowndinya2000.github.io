@@ -1,0 +1,29 @@
+updated: September 2026
+research_interests: Robot learning; model-based planning and control; manipulation under partial observability;
+  language-guided robotics.
+awards:
+- date: '2022'
+  title: Project showcase, IInvenTiv All IITs R&D Fair
+  detail: Research project advised by Prof. Kalidas Yeturu, showcased at IIT Delhi.
+- date: '2019'
+  title: Gold Medal, Inter IIT Technical Meet 8.0
+  detail: Ashoka’s Tech for Change Challenge at IIT Roorkee; high-preparation event among 20 IITs.
+leadership:
+- name: Google Developer Student Clubs, IIT Tirupati
+  role: Community Lead
+  dates: Feb 2019 – Jul 2020
+  description: Organized 12 workshops and hackathons for more than 70 students; led 15 mentoring sessions
+    on Flutter and Android.
+skills:
+- label: Programming
+  text: Python, C++
+- label: Robotics and learning
+  text: PyTorch, TensorFlow, OpenCV, PyBullet, Isaac Gym, ROS, Kornia
+- label: Visualization
+  text: Three.js
+service:
+- date: '2021'
+  description: Developed an Android application for IIT Tirupati’s convocation.
+- date: '2020'
+  description: Completed 80 hours of National Service Scheme service; developed the IIT Tirupati NSS website
+    and led its maintenance team.

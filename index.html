@@ -1,243 +1,37 @@
 ---
-layout: null
+layout: default
 ---
-<!DOCTYPE html>
-<html lang="en-US">
-
-<head>
-  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
-
-  <meta content="width=device-width, initial-scale=1" name="viewport">
-  <title>{{ site.name }}</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@700&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet">
-  
-  <!-- <link href="{{ '/css/fontawesome.all.min.css' | relative_url }}" rel="stylesheet">  
-  <link href="{{ '/css/bulma.min.css' | relative_url }}" rel="stylesheet">
-  <link href="{{ '/css/index.css' | relative_url }}" rel="stylesheet"> -->
-  <link href="https://kowndinya2000.github.io/css/fontawesome.all.min.css" rel="stylesheet">
-  <link href="https://kowndinya2000.github.io/css/bulma.min.css" rel="stylesheet">
-  <link href="https://kowndinya2000.github.io/css/index.css" rel="stylesheet">
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <!-- <script defer src="{{ '/js/fontawesome.all.min.js' | relative_url }}"></script>
-  <script src="{{ '/js/index.js' | relative_url }}"></script> -->
-  <script defer src="https://kowndinya2000.github.io/js/fontawesome.all.min.js"></script>
-  <script src="https://kowndinya2000.github.io/js/index.js"></script>
-</head>
-
-<body>
-
-  <section class="hero">
-    <div class="hero-body container is-max-desktop">
-      <div class="columns is-vcentered">
-
-        <div class="column is-4">
-          <div class="portrait">
-            <!-- <img src="{{ '/images/portrait.jpg' | relative_url }}" /> -->
-            <img src="https://kowndinya2000.github.io/images/portrait.jpg" />
-          </div>
-        </div>
-
-        <div class="column">
-          <h1 class="title">
-            <b>Hello, I'm {{ site.name }}</b>
-          </h1>
-          <div class="content has-text-justified">
-            {{ site.description | markdownify }}
-            <div class="buttons">
-              <a class="external-link button is-light" href="cv.html">
-                <span class="icon"><i class="fas fa-file"></i></span>
-                <span>CV (Web)</span>
-              </a>
-
-              <a class="external-link button is-light" href="./pdfs/Kowndinya_Resume.pdf">
-                <span class="icon"><i class="fas fa-file"></i></span>
-                <span>CV (PDF)</span>
-              </a>
-              
-              <a class="external-link button is-light"
-                href="https://scholar.google.com/citations?user={{ site.google_scholar }}">
-                <span class="icon"><i class="ai ai-google-scholar"></i></span>
-                <span>Scholar</span>
-              </a>
-
-              <a class="external-link button is-light" href="https://github.com/{{ site.github_username }}">
-                <span class="icon"><i class="fab fa-github"></i></span>
-                <span>Github</span>
-              </a>
-
-              <a class="external-link button is-light" href="https://linkedin.com/in/{{ site.linkedin_id }}">
-                <span class="icon"><i class="fab fa-linkedin"></i></span>
-                <span>LinkedIn</span>
-              </a>
-
-              <a class="external-link button is-light" href="https://twitter.com/{{ site.twitter_username }}">
-                <span class="icon"><i class="fab fa-twitter"></i></span>
-                <span>Twitter</span>
-              </a>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <table class="container" style="max-width:900px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    </table>
-  <table class="container" style="max-width:900px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody>
-      <tr>
-        <th width="20%" valign="top" align="center">
-          <img src="images/rutgers_logo.png" alt="sym" width="50%">
-          <p style="line-height:1.3; font-size:10pt">Computer Science (Robotics)<br>PhD<br>Sep. 24 - May 29</p>
-        </th>
-
-        <th width="20%" valign="top" align="center">
-          <img src="images/rutgers_logo.png" alt="sym" width="50%">
-          <p style="line-height:1.3; font-size:10pt">Computer Science<br>Masters<br>Aug. 22 - Oct 24</p>
-        </th>
-
-    <th width="20%" valign="top" align="center">
-      <img src="images/rishalab_logo.png" style="background-color: black;margin-top: 2rem;" alt="sym" width="80%">
-      <p style="line-height:1.3; font-size:10pt;margin-top: 2.5rem;">UG Researcher<br>Dec. 19 - May 22</p>
-    </th>
-
-    <th width="20%" valign="top" align="center">
-      <img src="images/uwaterloo_logo.webp" alt="sym" width="100%">
-      <p style="line-height:1.3; font-size:10pt">Visiting Scholar<br>Jul. 20 - Sep. 20</p>
-    </th>
-
-    <th width="50%" valign="top" align="center">
-      <img src="images/iittp_logo.png" alt="sym" width="100%">
-      <p style="line-height:1.3; font-size:10pt">Computer Science and Engineering<br>B.Tech<br>Jul. 17 - Jul. 21
-    </p></th>
-  </tr></tbody></table>
-
-  <!-- News. -->
-  <div class="hr">
-    <div class="container">
-      <hr>
+<section class="intro" aria-labelledby="intro-heading">
+  <div class="portrait-wrap"><img class="portrait" src="{{ '/images/portrait.jpg' | relative_url }}" alt="Kowndinya Boyalakuntla" width="418" height="499" fetchpriority="high"></div>
+  <div class="intro-text">
+    <p class="eyebrow">Robot learning · Rutgers University</p>
+    <h1 id="intro-heading">Kowndinya <br>Boyalakuntla</h1>
+    <p class="bio">I’m a Ph.D. student in Computer Science at <a href="https://www.rutgers.edu/">Rutgers University</a>, advised by <a href="https://www.abdeslam.net/">Prof. Abdeslam Boularias</a>.</p>
+    <p class="research-statement">I work on learning and planning for robot manipulation. My recent research explores learned world models, reliable execution under occlusion, and language-guided rearrangement.</p>
+    <div class="profile-links" aria-label="Profile links">
+      <a class="button" href="{{ '/pdfs/Kowndinya_Boyalakuntla_CV.pdf' | relative_url }}">Download CV <span aria-hidden="true">↗</span></a>
+      <a href="https://scholar.google.com/citations?user={{ site.google_scholar }}">Scholar</a>
+      <a href="https://github.com/{{ site.github_username }}">GitHub</a>
+      <a href="mailto:{{ site.email }}">Email</a>
     </div>
   </div>
+</section>
 
-  <section class="section">
-    <div class="container is-max-desktop">
+<section class="research-section" id="research" aria-labelledby="research-heading">
+  <div class="section-heading"><h2 id="research-heading">Research</h2><a class="quiet-link" href="https://scholar.google.com/citations?user={{ site.google_scholar }}">Google Scholar <span aria-hidden="true">↗</span></a></div>
+  <div class="publication-list">
+    {% for paper in site.data.publications %}{% if paper.group == 'robotics' %}{% include publication.html paper=paper %}{% endif %}{% endfor %}
+  </div>
+  <details class="earlier-work">
+    <summary><span>Earlier research</span><span class="summary-detail">Software engineering &amp; document understanding <span class="expand-symbol" aria-hidden="true">+</span></span></summary>
+    <div class="earlier-publications">{% for paper in site.data.publications %}{% if paper.group == 'earlier' %}{% include publication.html paper=paper %}{% endif %}{% endfor %}</div>
+  </details>
+</section>
 
-      <h2 class="title is-3">News</h2>
-      <div class="content">
-        <ul>
-          {% for news in site.data.news %}
-          <li>
-            <b>{{ news.date }}</b>: {{ news.description | markdownify | remove: '<p>' | remove: '</p>' }}
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
-
-      <h2 class="title is-3">Publications</h2>
-
-      {% for publication in site.data.publications %}
-      <div class="publication-block columns">
-
-        <div class="column is-2">
-          <div class="publication-image {% if publication.image_mouseover %}publication-mousecell{% endif %}">
-            {% if publication.image_mouseover contains "mp4" %}
-            <video autoplay preload playsinline class="" height="100%" loop muted width="100%">
-              <source src="./images/{{ publication.image_mouseover }}" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-            {% endif %}
-            <img alt="{{ publication.title }}" src="./images/{{ publication.image }}" />
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="content">
-            <h3 class="publication-title"><a href="{{ publication.project_page }}">{{ publication.title }}</a></h3>
-            <div class="publication-authors">
-              {% for author_id in publication.authors %}
-              {% assign author = site.data.authors[author_id] %}
-              <span class="author-block {% if author.is_me %}author-me{% endif %}">
-                {% if author.is_me %}
-                {{ author.first_name }} {{author.middle_name}} {{ author.last_name }}{% if forloop.last == false %},{%
-                endif %}
-                {% else %}
-                <a href="{{ author.website }}">{{ author.first_name }} {{ author.middle_name }} {{ author.last_name
-                  }}</a>{% if forloop.last == false %},{% endif %}
-                {% endif %}
-              </span>
-              {% endfor %}
-            </div>
-            <div class="publication-venue">
-              <span>{{ publication.venue }}</span>
-              {% for award in publication.awards %}
-                <span class="publication-venue-emph">{{ award }}<span>
-              {% endfor %}
-            </div>
-            <p class="publication-description">{{ publication.description }}</p>
-            <!-- Publication Links. -->
-            <div class="publication-links buttons field has-addons">
-              <a class="external-link button is-small is-ghost" id="project_page_{{publication.id}}" href="{{ publication.project_page }}">
-                <span class="icon"><i class="fas fa-globe-asia"></i></span>
-                <span>Project Page</span>
-              </a>
-              
-              {% if publication.pdf %}
-              <a class="external-link button is-small is-ghost" id="arxiv_page_{{publication.id}}" href="./pdfs/{{ publication.pdf }}">
-                <span class="icon"><i class="fas fa-file-pdf"></i></span>
-                <span>PDF</span>
-              </a>
-              {% endif %}
-
-              <a class="external-link button is-small is-ghost" id="pub_link_{{publication.id}}" href="{{ publication.pub_link }}">
-                <span class="icon"><i class="ai ai-arxiv"></i></span>
-                <span>Publication</span>
-              </a>
-              
-              {% if publication.github %}
-              <a class="external-link button is-small is-ghost" id="github_{{publication.id}}" href="https://github.com/{{ publication.github }}">
-                <span class="icon"><i class="fa fab fa-github"></i></span>
-                <span>Code</span>
-              </a>
-              {% endif %}
-            </div>
-            <!--/ Publication Links. -->
-          </div>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-  </section>
-
-
-  <footer class="footer">
-    <div class="container">
-      <div class="content footer-links has-text-centered">
-        <a href="mailto:{{ site.email }}">
-          <i class="fas fa-envelope"></i>
-        </a>
-        <a class="external-link" href="https://github.com/{{ site.github_username }}">
-          <i class="fab fa-github"></i>
-        </a>
-        <a class="external-link" href="https://scholar.google.com/citations?user={{ site.google_scholar }}">
-          <i class="ai ai-google-scholar"></i>
-        </a>
-      </div>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-8">
-          <div class="content">
-            <p>
-              Feel free to <a href="https://github.com/keunhong/keunhong.github.io">borrow this template</a>.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-</body>
-
-</html>
+<section class="background-section" id="background" aria-labelledby="background-heading">
+  <div class="section-heading"><h2 id="background-heading">Background</h2><a class="quiet-link" href="{{ '/cv.html' | relative_url }}">Full CV <span aria-hidden="true">↗</span></a></div>
+  <div class="education-list">{% for school in site.data.education %}
+    <div class="education-row"><p class="date">{{ school.short_dates }}</p><div><h3>{{ school.degree }}</h3><p>{{ school.name }}</p></div></div>
+  {% endfor %}</div>
+  <p class="background-note">Previously, I worked with <a href="https://researchweb.iiit.ac.in/~sridhar_ch/home.html">Prof. Sridhar Chimalakonda</a> and <a href="https://iittp.ac.in/dr-kalidas-yeturu">Prof. Kalidas Yeturu</a> at IIT Tirupati, and visited the University of Waterloo.</p>
+</section>

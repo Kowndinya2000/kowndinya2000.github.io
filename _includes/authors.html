@@ -1,0 +1,6 @@
+{%- for author_id in include.paper.authors -%}
+  {%- assign author = site.data.authors[author_id] -%}
+  {%- capture author_name -%}{{ author.first_name | strip }} {% if author.middle_name %}{{ author.middle_name | strip }} {% endif %}{{ author.last_name | strip }}{%- endcapture -%}
+  {%- if author.is_me -%}<strong>{{ author_name }}</strong>{%- elsif author.website and author.website != '' -%}<a href="{{ author.website }}">{{ author_name }}</a>{%- else -%}{{ author_name }}{%- endif -%}
+  {%- unless forloop.last -%}, {% endunless -%}
+{%- endfor -%}

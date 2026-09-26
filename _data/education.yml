@@ -1,15 +1,25 @@
-- name: Rutgers University-New Brunswick 
-  description: >-
-    Ph.D. in Computer Science, advised by <a href="https://www.cs.rutgers.edu/people/professors/details/jingjin-yu">Jingjin Yu</a>
-  dates: Fall 2024 - Spring 2029
-
-- name: Rutgers University-New Brunswick 
-  description: >-
-    MS in Computer Science, advised by <a href="http://www.abdeslam.net/">Abdeslam Boularias</a>
-  dates: Fall 2022 - Spring 2024
-
+- name: Rutgers University
+  location: New Brunswick, NJ
+  degree: Ph.D. in Computer Science
+  dates: Sep 2024 – present
+  short_dates: 2024 – present
+  advisors:
+  - abdeslam
+- name: Rutgers University
+  location: New Brunswick, NJ
+  degree: M.S. in Computer Science
+  dates: 2022 – 2024
+  short_dates: 2022 – 2024
+  advisors:
+  - abdeslam
+  gpa: 3.8/4.0
+  detail: 'Thesis: Context-Aware Entity Grounding with Open-Vocabulary 3D Scene Graphs.'
 - name: Indian Institute of Technology Tirupati
-  description: >-
-    B.Tech. in Computer Science and Engineering, advised by <a href="https://iittp.ac.in/dr-sridhar-chimalakonda">Sridhar Chimalakonda</a> and 
-    <a href="https://iittp.ac.in/dr-kalidas-yeturu">Kalidas Yeturu</a>
-  dates: Fall 2017 - Spring 2021
+  location: Tirupati, India
+  degree: B.Tech. in Computer Science and Engineering
+  dates: Jul 2017 – Jul 2021
+  short_dates: 2017 – 2021
+  advisors:
+  - sridhar
+  - kalidas
+  gpa: 8.42/10.0

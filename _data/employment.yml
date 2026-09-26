@@ -1,20 +1,19 @@
-
-- company: Robot Learning Lab, Rutgers University
-  description: Graduate Student Researcher
-  dates: "Jan 2023 - May 2024"
+- company: Rutgers University
+  role: Graduate Student Researcher
+  dates: Jan 2023 – present
   location: New Brunswick, NJ
-
-- company: RISHA Lab, Indian Institute of Technology Tirupati
-  description: Undergraduate Researcher
-  dates: "Dec 2019 - May 2022"
+  description: Research in robot learning, visual perception, and manipulation with Prof. Abdeslam Boularias.
+    Work includes scene grounding, language-guided rearrangement, dynamic grasping, learned world models,
+    and manipulation under self-occlusion.
+- company: RISHA Lab, IIT Tirupati
+  role: Undergraduate Student Researcher
+  dates: Dec 2019 – May 2022
   location: Tirupati, India
-
+  description: Research in empirical software engineering and human–computer interaction, including tools
+    for evaluating software repositories and generating energy-aware mobile applications.
 - company: University of Waterloo
-  description: Visiting Scholar
-  dates: "July 2020 - Sep 2020"
+  role: Visiting Scholar
+  dates: Jul 2020 – Sep 2020
   location: Waterloo, Canada
-
-- company: Google Developer Student Clubs
-  description: Lead
-  dates: "Feb 2019 - July 2020"
-  location: Tirupati, India
+  description: Improved RepoReaper for large-scale GitHub repository analysis, increasing recall and reducing
+    false positives without relying on GHTorrent.
