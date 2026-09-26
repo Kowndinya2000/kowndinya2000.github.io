@@ -1,6 +1,8 @@
 updated: September 2026
-research_interests: Robot learning; model-based planning and control; manipulation under partial observability;
-  language-guided robotics.
+research_interests: >-
+  I work on learning and planning for robot manipulation and whole-body control. My current research
+  explores learned world-models and how to turn human motion capture into useful action abstractions
+  for long-horizon planning in humanoid loco-manipulation.
 awards:
 - date: '2022'
   title: Project showcase, IInvenTiv All IITs R&D Fair
