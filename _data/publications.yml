@@ -7,7 +7,7 @@
   - yuhan
   - abdeslam
   year: 2026
-  venue: Under review at ICRA 2027
+  venue: Under review
   status: under-review
   group: robotics
   description: Closing the loop between planning and learning for humanoid control and zero-shot sim-to-real
@@ -28,7 +28,7 @@
   - abdeslam
   - jingjin
   year: 2026
-  venue: Under review at ICRA 2027
+  venue: Under review
   status: under-review
   group: robotics
   description: One initial plan, memory, and partial feedback guide target retrieval through dense clutter
