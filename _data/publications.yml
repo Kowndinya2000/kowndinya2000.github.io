@@ -12,10 +12,10 @@
   group: robotics
   description: Closing the loop between planning and learning for humanoid control and zero-shot sim-to-real
     manipulation.
-  project_page: https://icra27-pl-mpc.github.io/
-  url: https://icra27-pl-mpc.github.io/
-  pdf: https://icra27-pl-mpc.github.io/static/paper/pl-mpc.pdf
-  code: https://anonymous.4open.science/r/PL-MPC/README.md
+  project_page: https://pl-mpc-humanoid.github.io/
+  url: https://pl-mpc-humanoid.github.io/
+  pdf: https://pl-mpc-humanoid.github.io/static/paper/pl-mpc.pdf
+  code: https://github.com/Kowndinya2000/pl-mpc
   image: assets/images/pl-mpc-architecture.webp
   image_full: assets/images/pl-mpc-architecture.webp
   image_alt: PL-MPC architecture showing planning, replay, world-model and value learning, and actor learning.
@@ -33,10 +33,11 @@
   group: robotics
   description: One initial plan, memory, and partial feedback guide target retrieval through dense clutter
     when the robot blocks its own view.
-  project_page: https://icra27-trace.github.io/
-  url: https://icra27-trace.github.io/
-  pdf: https://icra27-trace.github.io/static/paper/trace.pdf
-  code: https://anonymous.4open.science/r/TRACE-27/README.md
+  project_page: https://trace-retrieval.github.io/
+  url: https://trace-retrieval.github.io/
+  pdf: https://trace-retrieval.github.io/static/paper/trace.pdf
+  code: https://github.com/Kowndinya2000/trace-code
+  data: https://huggingface.co/datasets/Kowndi/trace
   image: assets/images/trace-architecture.webp
   image_full: assets/images/trace-architecture.webp
   image_alt: TRACE architecture showing the frozen teacher plan, partial observations, student memory, and push or grasp decision.
