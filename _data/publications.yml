@@ -14,7 +14,7 @@
     manipulation.
   project_page: https://pl-mpc-humanoid.github.io/
   url: https://pl-mpc-humanoid.github.io/
-  pdf: https://pl-mpc-humanoid.github.io/static/paper/pl-mpc.pdf
+  pub_link: https://arxiv.org/abs/2609.39751
   code: https://github.com/Kowndinya2000/pl-mpc
   image: assets/images/pl-mpc-architecture.webp
   image_full: assets/images/pl-mpc-architecture.webp
@@ -35,7 +35,7 @@
     when the robot blocks its own view.
   project_page: https://trace-retrieval.github.io/
   url: https://trace-retrieval.github.io/
-  pdf: https://trace-retrieval.github.io/static/paper/trace.pdf
+  pub_link: https://arxiv.org/abs/2609.38857
   code: https://github.com/Kowndinya2000/trace-code
   data: https://huggingface.co/datasets/Kowndi/trace
   image: assets/images/trace-architecture.webp
