@@ -10,8 +10,8 @@
   - '[LGMCTS](https://lgmcts.github.io/) (IROS 2024): Co-developed the language-guided rearrangement benchmark with multi-pattern
     goals and initially infeasible scenes; developed the object-selection network, language parser,
     and evaluation pipeline.'
-  - '[DAP](https://arxiv.org/abs/2409.00499) (IROS 2024): Contributed to diffusion-based affordance prediction for multi-modal object storage,
-    combining placeable-region sampling with point-cloud correspondences to estimate precise 6D placement poses.'
+  - '[DAP](https://arxiv.org/abs/2409.00499) (IROS 2024): Collected data and evaluated a diffusion-based affordance prediction framework
+    for multi-modal object storage that combines placeable-region sampling with point-cloud correspondences to estimate 6D placement poses.'
 - company: RISHA Lab, IIT Tirupati
   role: Undergraduate Student Researcher
   dates: Dec 2019 – May 2022
