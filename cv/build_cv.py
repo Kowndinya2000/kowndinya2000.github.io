@@ -69,7 +69,7 @@ def main():
                 resources.append((label, p[key]))
         resource_text = r"\enspace ".join(r"\resource{" + tex(target) + "}{" + label + "}" for label, target in resources)
         title = p["title"]
-        if p["status"] == "under-review":
+        if p["status"] == "under-review" and p.get("prefix_title", True):
             title = p["short_title"] + ": " + title
         author_text = ", ".join(r"\textbf{" + tex(name(a)) + "}" if authors[a].get("is_me") else tex(name(a)) for a in p["authors"])
         venue = p["venue"]

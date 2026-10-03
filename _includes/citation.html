@@ -1,7 +1,7 @@
 {% assign paper_url = include.paper.pub_link | default: include.paper.pdf | default: include.paper.url %}
 {% unless paper_url contains '://' %}{% assign paper_url = paper_url | relative_url %}{% endunless %}
 <li>
-  <p class="citation-title"><a href="{{ paper_url }}">{% if include.paper.status == 'under-review' %}{{ include.paper.short_title }}: {% endif %}{{ include.paper.title }}</a></p>
+  <p class="citation-title"><a href="{{ paper_url }}">{% if include.paper.status == 'under-review' and include.paper.prefix_title != false %}{{ include.paper.short_title }}: {% endif %}{{ include.paper.title }}</a></p>
   <p class="authors">{% include authors.html paper=include.paper %}</p>
   <p class="cv-detail">{{ include.paper.venue }}{% if include.paper.status == 'under-review' %} · Manuscript, {{ include.paper.year }}{% endif %}</p>
   <div class="cv-resource-links" aria-label="Resources for {{ include.paper.short_title }}">

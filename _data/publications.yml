@@ -21,6 +21,7 @@
   image_alt: PL-MPC architecture showing planning, replay, world-model and value learning, and actor learning.
 - id: trace
   short_title: TRACE
+  prefix_title: false
   title: Plan-Conditioned Imitation for Robust Object Retrieval under Self-Occlusion in Dense Clutter
   authors:
   - kowndinya
@@ -47,7 +48,7 @@
   description: Tracking and grasping moving objects with an eye-in-hand camera, a Kalman filter, and reinforcement
     learning.
   image: images/karl.png
-  pub_link: https://arxiv.org/abs/2506.15945
+  pub_link: https://ieeexplore.ieee.org/abstract/document/11245879
   code: https://github.com/arc-l/karl
   authors:
   - kowndinya
@@ -56,7 +57,7 @@
   year: 2025
   group: robotics
   status: published
-  url: https://arxiv.org/abs/2506.15945
+  url: https://ieeexplore.ieee.org/abstract/document/11245879
   short_title: KARL
 - id: dap
   title: 'DAP: Diffusion-based Affordance Prediction for Multi-modality Storage'

@@ -5,7 +5,7 @@
   </a>
   {% endif %}
   <div class="publication-body">
-    <h3><a href="{{ include.paper.url }}">{% if include.paper.status == 'under-review' %}{{ include.paper.short_title }}: {% endif %}{{ include.paper.title }}</a></h3>
+    <h3><a href="{{ include.paper.url }}">{% if include.paper.status == 'under-review' and include.paper.prefix_title != false %}{{ include.paper.short_title }}: {% endif %}{{ include.paper.title }}</a></h3>
     <p class="authors">{% include authors.html paper=include.paper %}</p>
     <p class="venue">{{ include.paper.venue }}</p>
     <p class="publication-description">{{ include.paper.description }}</p>
