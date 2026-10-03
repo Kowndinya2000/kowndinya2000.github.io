@@ -16,18 +16,6 @@ layout: default
   </div>
 </section>
 
-<section class="ongoing-section" id="research" aria-labelledby="research-heading">
-  <div class="section-heading"><h2 id="research-heading">Ongoing research</h2></div>
-  <div class="ongoing-projects">
-    {% for project in site.data.ongoing_research %}
-    <article class="ongoing-project" id="{{ project.id }}" aria-labelledby="{{ project.id }}-heading">
-      <h3 id="{{ project.id }}-heading">{{ project.title }}</h3>
-      <p>{{ project.description }}</p>
-    </article>
-    {% endfor %}
-  </div>
-</section>
-
 <section class="research-section" id="publications" aria-labelledby="publications-heading">
   <div class="section-heading"><h2 id="publications-heading">Publications</h2><a class="quiet-link" href="https://scholar.google.com/citations?user={{ site.google_scholar }}">Google Scholar <span aria-hidden="true">↗</span></a></div>
   <div class="publication-list">
