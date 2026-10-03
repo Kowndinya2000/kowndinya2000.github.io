@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Generate the CV from the website data and compile its LaTeX source."""
 from pathlib import Path
+import re
 import shutil
 import subprocess
 import tempfile
@@ -25,6 +26,19 @@ def tex(value):
 
 def link(url, label):
     return r"\href{" + tex(url) + "}{" + tex(label) + "}"
+
+
+def linked_tex(value):
+    """Render inline Markdown links as underlined LaTeX links, escaping other text."""
+    parts = []
+    end = 0
+    for match in re.finditer(r"\[([^\]]+)\]\((https?://[^\s)]+)\)", value):
+        parts.append(tex(value[end:match.start()]))
+        label, url = match.groups()
+        parts.append(r"\href{" + tex(url) + r"}{\underline{" + tex(label) + "}}")
+        end = match.end()
+    parts.append(tex(value[end:]))
+    return "".join(parts)
 
 
 def section(title):
@@ -85,7 +99,12 @@ def main():
         lines.append(r"\end{itemize}\par\addvspace{4pt}")
     lines.append(section("Research experience"))
     for job in read("_data/employment.yml"):
-        lines.append(entry(job["company"], job["dates"], job["role"] + " · " + job["location"], tex(job["description"])))
+        body = tex(job.get("description", ""))
+        if job.get("highlights"):
+            body += r"\begin{itemize}[leftmargin=13pt,itemsep=2pt,parsep=0pt,topsep=3pt]"
+            body += "\n".join(r"\item " + linked_tex(point) for point in job["highlights"])
+            body += r"\end{itemize}"
+        lines.append(entry(job["company"], job["dates"], job["role"] + " · " + job["location"], body))
     lines.append(section("Teaching"))
     for course in data["teaching"]:
         lines.append(r"\textbf{" + tex(course["role"] + ", " + course["name"]) + r"}\hfill{\small " + tex(course["dates"]) + r"}\par " + link(course["url"], course["course"]) + r"\enspace {\small " + tex(course["level"] + " course") + r"}\par")
