@@ -2,6 +2,7 @@
   role: Graduate Student Researcher
   dates: Jan 2023 – present
   location: New Brunswick, NJ
+  description: Conducted research in robot learning for 3D scene understanding, object rearrangement, and placement.
   highlights:
   - '[OVSG](https://ovsg-l.github.io/) (CoRL 2023): Built the evaluation pipeline and
     [DOVE-G](https://doi.org/10.6084/m9.figshare.24307072.v1) benchmark (8 scenarios, 4,000 queries)
