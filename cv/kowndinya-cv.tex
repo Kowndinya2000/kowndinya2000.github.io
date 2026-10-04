@@ -20,12 +20,12 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 \setlength{\footskip}{22pt}
-\newcommand{\cvsection}[1]{\par\addvspace{4pt}\needspace{45pt}{\sffamily\large\bfseries #1}\par\vspace{2pt}\hrule\vspace{4pt}}
-\newcommand{\cventry}[4]{\needspace{50pt}\textbf{#1}\hfill{\small #2}\par{\itshape #3}\par #4\par\addvspace{4pt}}
+\newcommand{\cvsection}[1]{\par\addvspace{4pt}\Needspace{45pt}{\sffamily\large\bfseries #1}\par\vspace{2pt}\hrule\vspace{4pt}}
+\newcommand{\cventry}[4]{\Needspace{50pt}\textbf{#1}\hfill{\small #2}\par{\itshape #3}\par #4\par\addvspace{4pt}}
 \newcommand{\resource}[2]{\href{#1}{\underline{[#2]}}}
-\newcommand{\paper}[5]{\item\textbf{\href{#1}{#2}}\par {\small #3}\par {\small\textit{#4}\quad #5}}
+\newcommand{\paper}[5]{\item\begin{minipage}[t]{\linewidth}\textbf{\href{#1}{#2}}\par {\small #3}\par {\small\textit{#4}\quad #5}\end{minipage}}
 \newenvironment{papers}{\begin{enumerate}[leftmargin=16pt,label=\arabic*.,itemsep=3pt,parsep=0pt,topsep=0pt]}{\end{enumerate}}
-\newcommand{\educationentry}[4]{\needspace{38pt}\textbf{#1}\hfill{\small #2}\par{\itshape #3}\enspace{\small #4}\par\addvspace{4pt}}
+\newcommand{\educationentry}[4]{\Needspace{38pt}\textbf{#1}\hfill{\small #2}\par{\itshape #3}\enspace{\small #4}\par\addvspace{4pt}}
 \begin{document}
 \input{content.tex}
 \end{document}
