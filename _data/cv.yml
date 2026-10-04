@@ -18,6 +18,8 @@ teaching:
   level: Undergraduate
   url: https://kowndinya2000.github.io/cs440-fa26/
 reviewing:
+- venue: IEEE International Conference on Robotics and Automation (ICRA)
+  years: '2026'
 - venue: IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
   years: '2025, 2026'
 - venue: Conference on Robot Learning (CoRL)
