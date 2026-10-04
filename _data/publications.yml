@@ -14,8 +14,8 @@
     manipulation.
   cv_highlights:
   - Combined uncertainty-aware MPPI planning with value learning and policy distillation using learned world models;
-    improved mean return over the TD-M(PC)² baseline from 98 to 387 on balance-hard and from 199 to 466 on hurdle
-    with Unitree H1 in HumanoidBench (MuJoCo).
+    improved mean return over the TD-M(PC)² baseline on two challenging HumanoidBench tasks—balance-hard
+    (98 to 387) and hurdle (199 to 466)—with Unitree H1 in MuJoCo.
   - Demonstrated zero-shot sim-to-real transfer of a learned world model coupled with an MPPI planner
     from Isaac Gym to a KUKA IIWA14 for tool manipulation on a challenging wrench–nut alignment task.
   project_page: https://pl-mpc-humanoid.github.io/
