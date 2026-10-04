@@ -3,15 +3,16 @@ introduction: >-
   I am a third-year Ph.D. student in Computer Science at Rutgers University with nearly 4 years of
   experience in robot learning and planning. My research spans 3D scene understanding, object rearrangement,
   dynamic manipulation, and model-based reinforcement learning for humanoid locomotion. I have published
-  at CoRL and IROS. My current focus is robust humanoid loco-manipulation using learned world models
-  and vision-language-action (VLA) policies.
+  at CoRL and IROS. My current research focuses on planning with learned world models for robust humanoid
+  loco-manipulation. I also study Q-guided planning for vision-language-action (VLA) policies.
 research_experience_summary: >-
   I have nearly 4 years of research experience in robot learning and planning, spanning 3D scene
   understanding, object rearrangement, dynamic manipulation, and model-based reinforcement learning
   for humanoid locomotion. I have published at CoRL and IROS.
 research_interests: >-
-  My current research explores action abstractions from human motion capture for planning with learned world models,
-  and Q-guided recovery for frozen imitation policies, toward robust humanoid loco-manipulation.
+  My current research explores action abstractions from human motion capture for planning with learned
+  world models toward robust humanoid loco-manipulation. I also study Q-guided planning for
+  vision-language-action (VLA) policies.
 awards:
 - date: '2022'
   title: Project showcase, IInvenTiv All IITs R&D Fair
