@@ -130,6 +130,7 @@
   url: https://ovsg-l.github.io
   short_title: OVSG
 - id: egen
+  in_cv: false
   title: 'eGEN: an energy-saving modeling language and code generator for location-sensing of mobile apps'
   venue: ESEC/FSE, 2022
   description: A tool to specify energy-aware self-adaptive location-sensing strategies helping developers
@@ -148,6 +149,7 @@
   url: https://dl.acm.org/doi/abs/10.1145/3540250.3558914
   short_title: eGEN
 - id: repoquester
+  in_cv: false
   title: 'RepoQuester: A Tool Towards Evaluating GitHub Projects'
   venue: ICSME, 2022
   description: A command-line tool to assist developers in evaluating projects by providing quantitative
@@ -166,6 +168,7 @@
   url: https://ieeexplore.ieee.org/abstract/document/9978187
   short_title: RepoQuester
 - id: gitq
+  in_cv: false
   title: GitQ-towards using badges as visual cues for GitHub projects
   venue: ICPC, 2022
   description: A Chrome plugin to augment GitHub with badges that deliver visual cues quantifying the
@@ -183,6 +186,7 @@
   url: https://dl.acm.org/doi/abs/10.1145/3524610.3527876
   short_title: GitQ
 - id: annotator
+  in_cv: false
   title: A Platform for Large Scale Auto Annotation of Scanned Documents Featuring Real-Time Model Building
     and Model Pooling
   venue: CVIP, 2021

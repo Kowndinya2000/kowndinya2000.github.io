@@ -53,7 +53,7 @@ def main():
     config = read("_config.yml")
     authors = read("_data/authors.yml")
     data = read("_data/cv.yml")
-    publications = read("_data/publications.yml")
+    publications = [p for p in read("_data/publications.yml") if p.get("in_cv", True)]
 
     def name(key):
         author = authors[key]
@@ -102,7 +102,7 @@ def main():
     lines.append(section("Teaching"))
     for course in data["teaching"]:
         lines.append(r"\textbf{" + tex(course["role"] + ", " + course["name"]) + r"}\hfill{\small " + tex(course["dates"]) + r"}\par " + link(course["url"], course["course"]) + r"\enspace {\small " + tex(course["level"] + " course") + r"}\par")
-    lines.extend([section("Peer-reviewed publications"), r"\begin{papers}"])
+    lines.extend([section("Selected peer-reviewed publications"), r"\begin{papers}"])
     lines.extend(paper(p) for p in publications if p["status"] == "published")
     lines.extend([r"\end{papers}", section("Honors & awards")])
     for award in data["awards"]:
@@ -110,9 +110,6 @@ def main():
     lines.append(section("Leadership & mentoring"))
     for role in data["leadership"]:
         lines.append(entry(role["name"], role["dates"], role["role"], tex(role["description"])))
-    lines.append(section("Technical skills"))
-    for skill in data["skills"]:
-        lines.append(r"\textbf{" + tex(skill["label"]) + ":} " + tex(skill["text"]) + r"\par")
     lines.append(section("Professional service & activities"))
     reviewer_text = "; ".join(item["venue"] + " (" + item["years"] + ")" for item in data["reviewing"]) + "."
     lines.append(r"\textbf{Reviewer:} " + tex(reviewer_text) + r"\par\vspace{4pt}")

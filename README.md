@@ -6,7 +6,7 @@ Content is stored in `_config.yml` and `_data/`. Run `bundle exec jekyll serve` 
 
 ## Curriculum vitae
 
-The website and PDF share the same YAML content. With Python 3 and TeX Live installed:
+The website and PDF share the same YAML content. Set `in_cv: false` on an entry in `_data/publications.yml` to omit it from the CV webpage and PDF. With Python 3 and TeX Live installed:
 
 ```sh
 python -m pip install -r cv/requirements.txt
