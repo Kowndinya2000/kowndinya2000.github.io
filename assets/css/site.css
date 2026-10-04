@@ -72,9 +72,11 @@ h3 { font-size: 21px; line-height: 1.4; font-weight: 600; }
 .publication--earlier h3 { font-size: 20px; }
 .background-section { padding-top: 42px; padding-bottom: 42px; }
 .teaching-section { padding-top: 42px; }
-.teaching-entry h3 { font-size: 20px; font-weight: 500; }
-.teaching-entry p, .reviewing-note { font-size: 17px; color: var(--muted); }
-.teaching-entry p { margin-top: 5px; }
+.teaching-list { margin-bottom: 20px; }
+.teaching-entry { display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 16px; padding: 5px 0; font-size: 17px; }
+.teaching-entry p { margin: 0; }
+.teaching-date { color: var(--muted); white-space: nowrap; }
+.reviewing-note { font-size: 17px; color: var(--muted); }
 .reviewing-note { margin-top: 18px; }
 .reviewing-list { margin: 6px 0 12px; padding-left: 20px; font-size: 17px; }
 .reviewing-list li + li { margin-top: 4px; }
@@ -148,6 +150,7 @@ h3 { font-size: 21px; line-height: 1.4; font-weight: 600; }
   .earlier-work summary { align-items: flex-start; }
   .summary-detail { max-width: 140px; font-size: 13px; gap: 14px; line-height: 1.5; }
   .background-section { padding-top: 30px; padding-bottom: 32px; }
+  .teaching-entry { grid-template-columns: 1fr; gap: 3px; padding: 8px 0; }
   .education-row { grid-template-columns: 1fr; gap: 4px; padding: 13px 0; }
   .site-footer div { gap: 20px; }
   .cv-page { padding: 32px 0 40px; }

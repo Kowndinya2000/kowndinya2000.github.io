@@ -29,9 +29,7 @@ layout: default
 
 <section class="teaching-section" id="teaching" aria-labelledby="teaching-heading">
   <div class="section-heading"><h2 id="teaching-heading">Teaching &amp; service</h2></div>
-  {% for course in site.data.cv.teaching %}
-  <div class="teaching-entry"><h3><a href="{{ course.url }}">{{ course.course }}</a></h3><p>{{ course.role }} · {{ course.level }} course · {{ course.name }} · {{ course.dates }}</p></div>
-  {% endfor %}
+  {% include teaching.html %}
   <div class="reviewing-note"><strong>Peer review</strong>{% include reviewing.html %}</div>
 </section>
 

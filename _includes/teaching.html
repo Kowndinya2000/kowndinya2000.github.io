@@ -1,0 +1,8 @@
+<div class="teaching-list">
+  {% for course in site.data.cv.teaching %}
+  <div class="teaching-entry">
+    <p class="teaching-date">{{ course.dates }}</p>
+    <p>{% if course.url %}<a href="{{ course.url }}">{{ course.course }}</a>{% else %}{{ course.course }}{% endif %}, {% if course.role == 'Instructor' %}<strong>{{ course.role }}</strong>{% else %}{{ course.role }}{% endif %}, {{ course.name }}</p>
+  </div>
+  {% endfor %}
+</div>

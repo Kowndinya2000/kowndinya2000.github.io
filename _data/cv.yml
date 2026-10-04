@@ -17,6 +17,26 @@ teaching:
   course: 'CS440: Introduction to Artificial Intelligence'
   level: Undergraduate
   url: https://kowndinya2000.github.io/cs440-fa26/
+- name: Rutgers University
+  role: Teaching Assistant
+  dates: Spring 2026
+  course: 'CS440: Introduction to Artificial Intelligence'
+  level: Undergraduate
+- name: Rutgers University
+  role: Teaching Assistant
+  dates: Fall 2025
+  course: 'CS460: Introduction to Computational Robotics'
+  level: Undergraduate
+- name: Rutgers University
+  role: Teaching Assistant
+  dates: Spring 2025
+  course: 'CS440: Introduction to Artificial Intelligence'
+  level: Undergraduate
+- name: Rutgers University
+  role: Teaching Assistant
+  dates: Fall 2024
+  course: 'CS440: Introduction to Artificial Intelligence'
+  level: Undergraduate
 reviewing:
 - venue: IEEE International Conference on Robotics and Automation (ICRA)
   years: '2026'

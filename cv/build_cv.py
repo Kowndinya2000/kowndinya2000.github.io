@@ -99,12 +99,17 @@ def main():
             body += "\n".join(r"\item " + linked_tex(point) for point in job["highlights"])
             body += r"\end{itemize}"
         lines.append(entry(job["company"], job["dates"], job["role"] + " · " + job["location"], body))
-    lines.append(section("Teaching"))
-    for course in data["teaching"]:
-        lines.append(r"\textbf{" + tex(course["role"] + ", " + course["name"]) + r"}\hfill{\small " + tex(course["dates"]) + r"}\par " + link(course["url"], course["course"]) + r"\enspace {\small " + tex(course["level"] + " course") + r"}\par")
     lines.extend([section("Selected peer-reviewed publications"), r"\begin{papers}"])
     lines.extend(paper(p) for p in publications if p["status"] == "published")
-    lines.extend([r"\end{papers}", section("Honors & awards")])
+    lines.extend([r"\end{papers}", section("Teaching experience"),
+                  r"\begin{description}[leftmargin=78pt,labelwidth=70pt,labelsep=8pt,align=left,font=\normalfont,itemsep=3pt,parsep=0pt,topsep=0pt]"])
+    for course in data["teaching"]:
+        title = link(course["url"], course["course"]) if course.get("url") else tex(course["course"])
+        role = tex(course["role"])
+        if course["role"] == "Instructor":
+            role = r"\textbf{" + role + "}"
+        lines.append(r"\item[" + tex(course["dates"]) + "] " + title + ", " + role + ", " + tex(course["name"]))
+    lines.extend([r"\end{description}", section("Honors & awards")])
     for award in data["awards"]:
         lines.append(r"\textbf{" + tex(award["date"]) + r"}\enspace " + tex(award["title"]) + r". {\small " + tex(award["detail"]) + r"}\par\vspace{4pt}")
     lines.append(section("Leadership & mentoring"))
