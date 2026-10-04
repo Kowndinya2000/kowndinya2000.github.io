@@ -13,10 +13,11 @@
   description: Closing the loop between planning and learning for humanoid control and zero-shot sim-to-real
     manipulation.
   cv_highlights:
-  - Combined hybrid multi-step value targets, uncertainty-aware MPC, and return-weighted policy distillation
-    to improve planning and learning with a shared world model.
-  - Improved mean return over TD-M(PC)² from 98 to 387 on HumanoidBench balance-hard and from 199 to 466
-    on hurdle; demonstrated zero-shot transfer to KUKA wrench–nut alignment.
+  - Combined uncertainty-aware MPPI planning with value learning and policy distillation using learned world models;
+    improved mean return over the TD-M(PC)² baseline from 98 to 387 on balance-hard and from 199 to 466 on hurdle
+    with Unitree H1 in HumanoidBench (MuJoCo).
+  - Demonstrated zero-shot sim-to-real transfer of a learned world model coupled with an MPPI planner
+    from Isaac Gym to a KUKA IIWA14 for tool manipulation on a challenging wrench–nut alignment task.
   project_page: https://pl-mpc-humanoid.github.io/
   url: https://pl-mpc-humanoid.github.io/
   pub_link: https://arxiv.org/abs/2609.39751
@@ -37,13 +38,13 @@
   venue: Under review
   status: under-review
   group: robotics
-  description: One initial plan, memory, and partial feedback guide target retrieval through dense clutter
-    when the robot blocks its own view.
+  description: Retrieving objects from dense clutter despite camera occlusion, using plan-conditioned
+    imitation learning.
   cv_highlights:
-  - Trained a recurrent policy with behavior cloning and DAgger to combine a fixed teacher plan with
-    partial observations for object retrieval under self-occlusion.
-  - Achieved 90.7% success on 511 simulation scenes and 90% on UR5e; mean hardware task time was 67.3 s
-    versus 192.7 s for the privileged teacher, which achieved 95% success.
+  - Developed a plan-conditioned imitation policy that rearranges dense clutter to create grasping clearance
+    even when the robot’s arm blocks the camera’s view, with potential applications in bin picking and assembly-kit retrieval.
+  - Achieved 90.7% retrieval success in Isaac Gym simulation and 90% after sim-to-real transfer to UR5e,
+    cutting hardware task time by 65% versus the full-observation planner.
   project_page: https://trace-retrieval.github.io/
   url: https://trace-retrieval.github.io/
   pub_link: https://arxiv.org/abs/2609.38857
@@ -55,13 +56,13 @@
 - id: karl
   title: 'KARL: Kalman-Filter Assisted Reinforcement Learner for Dynamic Object Tracking and Grasping'
   venue: IROS, 2025
-  description: Tracking and grasping moving objects with an eye-in-hand camera, a Kalman filter, and reinforcement
-    learning.
+  description: Tracking and grasping moving objects with reinforcement learning and Kalman filtering,
+    including recovery from tracking loss and failed grasps.
   cv_highlights:
-  - Integrated extended Kalman filtering for tracking recovery, a six-stage reinforcement learning curriculum,
-    and grasp retries for dynamic grasping with an eye-in-hand camera.
-  - Achieved 93.3% versus 60.0% grasp success in regular scenes and 80.0% versus 53.3% in obstacle scenes
-    against EARL on UR5e, with 15 trials per condition.
+  - Combined curriculum reinforcement learning in Isaac Gym with Kalman-filter tracking for dynamic grasping
+    and failure recovery through object reacquisition and grasp retries.
+  - Demonstrated sim-to-real transfer to UR5e, achieving 93.3% grasp success in unobstructed scenes and
+    80% with obstacles, outperforming [EARL](https://ieeexplore.ieee.org/document/10341988/) in both settings.
   image: images/karl.png
   pub_link: https://ieeexplore.ieee.org/abstract/document/11245879
   code: https://github.com/arc-l/karl
@@ -80,10 +81,9 @@
   description: Diffusion-based affordance prediction for placing objects in containers with different
     storage modes.
   cv_highlights:
-  - Collected data and evaluated a pipeline combining diffusion-based affordance sampling with point-cloud
-    correspondence for 6D object placement.
-  - Achieved 98% book-shelving and 94% can-stacking success in simulation, versus RPDiff's 94% and 85%;
-    demonstrated real-robot fruit storage after training on 80 demonstrations.
+  - Collected data and evaluated diffusion-based 6D object placement for storage tasks.
+  - Achieved 98% book-shelving and 94% can-stacking success in simulation, outperforming the RPDiff placement baseline;
+    demonstrated fruit storage on a KUKA IIWA14.
   image: images/dap.png
   pdf: pdfs/DAP_IROS24.pdf
   authors:
@@ -105,10 +105,9 @@
   description: Turning language instructions into executable object rearrangements through geometric reasoning
     and tree search.
   cv_highlights:
-  - Co-developed ELGR-Bench and implemented object selection, language parsing, and evaluation for a planner
-    combining language-derived geometric priors with Monte Carlo tree search.
-  - Achieved 79.2% executable-plan success on ELGR-Bench versus 45.2% for LLMs as Few-Shot Planners
-    and 74.1% for separate goal-pose and motion planning; demonstrated rearrangement on UR5e.
+  - Co-developed ELGR-Bench and implemented language parsing, object selection, and evaluation for a planner
+    that combines language guidance with Monte Carlo tree search.
+  - Achieved 79.2% executable-plan success on ELGR-Bench and demonstrated language-guided rearrangement on UR5e.
   project_page: https://lgmcts.github.io
   image: images/lgmcts.png
   pub_link: https://arxiv.org/abs/2309.15821
@@ -133,10 +132,9 @@
   venue: CoRL, 2023
   description: Grounding free-form language queries in open-vocabulary 3D scene graphs.
   cv_highlights:
-  - Built the DOVE-G benchmark (8 scenes, 4,000 queries) and evaluation pipeline for grounding language in
-    open-vocabulary 3D scene graphs; reconstructed scenes and integrated ConceptFusion.
-  - Achieved 65.75% top-1 3D grounding success on DOVE-G versus OVIR-3D's 41.5%, using full queries
-    and a 3D IoU threshold of 0.5.
+  - Built the DOVE-G benchmark and evaluation pipeline for grounding language in open-vocabulary 3D scene
+    graphs, including scene reconstruction and ConceptFusion integration.
+  - Achieved 65.8% top-1 3D grounding success on DOVE-G, compared with 41.5% for OVIR-3D.
   project_page: https://ovsg-l.github.io
   image: images/ovsg-q.png
   pub_link: https://arxiv.org/abs/2309.15940

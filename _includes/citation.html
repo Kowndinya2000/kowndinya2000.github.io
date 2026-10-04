@@ -11,6 +11,6 @@
     {% if include.paper.data %}<a href="{{ include.paper.data }}">[Data]</a>{% endif %}
   </div>
   {% if include.paper.cv_highlights %}
-  <ul class="publication-highlights">{% for point in include.paper.cv_highlights %}<li>{{ point | escape }}</li>{% endfor %}</ul>
+  <ul class="publication-highlights">{% for point in include.paper.cv_highlights %}<li>{{ point | markdownify | remove: '<p>' | remove: '</p>' | strip }}</li>{% endfor %}</ul>
   {% endif %}
 </li>

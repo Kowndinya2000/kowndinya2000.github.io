@@ -62,18 +62,17 @@ leadership:
 - name: Google Developer Student Clubs, IIT Tirupati
   role: Community Lead
   dates: Feb 2019 – Jul 2020
-  description: Organized 12 workshops and hackathons for more than 70 students; led 15 mentoring sessions
-    on Flutter and Android.
+  description: 12 workshops/hackathons; 70+ students.
+  compact: true
 skills:
-- label: Programming
-  text: Python, C++
-- label: Robotics and learning
-  text: PyTorch, TensorFlow, OpenCV, PyBullet, Isaac Gym, ROS, Kornia
-- label: Visualization
-  text: Three.js
+- label: Real hardware
+  text: UR5e, KUKA IIWA14
+- label: Simulation platforms
+  text: NVIDIA Isaac Gym, Isaac Lab, MuJoCo, PyBullet
+- label: Programming & tools
+  text: Python, PyTorch, ROS, ROS 2, NumPy, OpenCV, Slurm, Git
 service:
 - date: '2021'
   description: Developed an Android application for IIT Tirupati’s convocation.
 - date: '2020'
-  description: Completed 80 hours of National Service Scheme service; developed the IIT Tirupati NSS website
-    and led its maintenance team.
+  description: 'NSS, IIT Tirupati: 80 service hours; website development and maintenance team lead.'

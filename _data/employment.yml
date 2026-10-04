@@ -2,14 +2,18 @@
   role: Graduate Student Researcher
   dates: Jan 2023 – present
   location: New Brunswick, NJ
-  description: Conducted research in robot learning for 3D scene understanding, object rearrangement, and placement.
+  description: >-
+    Develop planning and model-based reinforcement learning methods for humanoid control and sim-to-real
+    manipulation using learned world models. Investigate Q-guided planning for vision-language-action (VLA) policies.
 - company: RISHA Lab, IIT Tirupati
-  role: Undergraduate Student Researcher
+  role: Undergraduate Researcher
   dates: Dec 2019 – May 2022
   location: Tirupati, India
-  description: Developed tools for GitHub repository evaluation and energy-aware mobile application generation.
+  description: Repository analysis and mobile tools.
+  compact: true
 - company: University of Waterloo
   role: Visiting Scholar
   dates: Jul 2020 – Sep 2020
   location: Waterloo, Canada
-  description: Improved RepoReaper’s recall and reduced false positives in GitHub repository analysis without GHTorrent.
+  description: Large-scale analysis of 1 million GitHub repositories.
+  compact: true
