@@ -1,19 +1,17 @@
 updated: October 2026
 introduction: >-
-  I am a Ph.D. candidate in Computer Science at Rutgers University with over three years of research
-  in robot learning and planning. I have published at CoRL and IROS, built robotics benchmarks and
-  evaluation pipelines, and contributed to diffusion-based 6D object placement and language-guided
-  rearrangement. My experience spans 3D scene understanding and sim-to-real manipulation. My current
-  research focuses on learned world models and Vision-Language-Action (VLA) models for humanoid
-  loco-manipulation.
+  I am a third-year Ph.D. student in Computer Science at Rutgers University with nearly 4 years of
+  experience in robot learning and planning. My research spans 3D scene understanding, object rearrangement,
+  dynamic manipulation, and model-based reinforcement learning for humanoid locomotion. I have published
+  at CoRL and IROS. My current focus is robust humanoid loco-manipulation using learned world models
+  and vision-language-action (VLA) policies.
 research_experience_summary: >-
-  I have over three years of research experience, with publications at CoRL and IROS. I have built
-  robotics benchmarks and evaluation pipelines, and contributed to diffusion-based 6D object placement
-  and language-guided rearrangement. My experience spans 3D scene understanding and sim-to-real manipulation.
+  I have nearly 4 years of research experience in robot learning and planning, spanning 3D scene
+  understanding, object rearrangement, dynamic manipulation, and model-based reinforcement learning
+  for humanoid locomotion. I have published at CoRL and IROS.
 research_interests: >-
-  I work on learning and planning for robot manipulation and whole-body control. My current research
-  explores action abstractions from human motion capture for planning with learned world models,
-  and Q-guided recovery for frozen imitation policies, toward reliable humanoid loco-manipulation.
+  My current research explores action abstractions from human motion capture for planning with learned world models,
+  and Q-guided recovery for frozen imitation policies, toward robust humanoid loco-manipulation.
 awards:
 - date: '2022'
   title: Project showcase, IInvenTiv All IITs R&D Fair
