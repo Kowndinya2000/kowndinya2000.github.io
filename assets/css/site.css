@@ -76,6 +76,8 @@ h3 { font-size: 21px; line-height: 1.4; font-weight: 600; }
 .teaching-entry p, .reviewing-note { font-size: 17px; color: var(--muted); }
 .teaching-entry p { margin-top: 5px; }
 .reviewing-note { margin-top: 18px; }
+.reviewing-list { margin: 6px 0 12px; padding-left: 20px; font-size: 17px; }
+.reviewing-list li + li { margin-top: 4px; }
 .education-row { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 32px; padding: 14px 0; }
 .date { font-size: 16px; color: var(--muted); font-variant-numeric: tabular-nums; }
 .education-row h3 { font-size: 18px; font-weight: 500; }

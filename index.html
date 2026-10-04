@@ -32,7 +32,7 @@ layout: default
   {% for course in site.data.cv.teaching %}
   <div class="teaching-entry"><h3><a href="{{ course.url }}">{{ course.course }}</a></h3><p>{{ course.role }} · {{ course.level }} course · {{ course.name }} · {{ course.dates }}</p></div>
   {% endfor %}
-  <p class="reviewing-note"><strong>Reviewer:</strong> {% include reviewing.html %}</p>
+  <div class="reviewing-note"><strong>Peer review</strong>{% include reviewing.html %}</div>
 </section>
 
 <section class="background-section" id="background" aria-labelledby="background-heading">

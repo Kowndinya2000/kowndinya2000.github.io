@@ -1,1 +1,5 @@
-{%- for assignment in site.data.cv.reviewing -%}{{ assignment.venue }} ({{ assignment.years }}){% unless forloop.last %}; {% endunless %}{%- endfor -%}.
+<ul class="reviewing-list">
+  {% for assignment in site.data.cv.reviewing %}
+  <li>{{ assignment.venue }} ({{ assignment.years }})</li>
+  {% endfor %}
+</ul>
