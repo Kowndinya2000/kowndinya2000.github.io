@@ -1,4 +1,15 @@
 updated: October 2026
+introduction: >-
+  I am a Ph.D. candidate in Computer Science at Rutgers University with over three years of research
+  in robot learning and planning. I have published at CoRL and IROS, built robotics benchmarks and
+  evaluation pipelines, and contributed to diffusion-based 6D object placement and language-guided
+  rearrangement. My experience spans 3D scene understanding and sim-to-real manipulation. My current
+  research focuses on learned world models and Vision-Language-Action (VLA) models for humanoid
+  loco-manipulation.
+research_experience_summary: >-
+  I have over three years of research experience, with publications at CoRL and IROS. I have built
+  robotics benchmarks and evaluation pipelines, and contributed to diffusion-based 6D object placement
+  and language-guided rearrangement. My experience spans 3D scene understanding and sim-to-real manipulation.
 research_interests: >-
   I work on learning and planning for robot manipulation and whole-body control. My current research
   explores action abstractions from human motion capture for planning with learned world models,
