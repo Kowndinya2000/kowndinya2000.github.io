@@ -106,8 +106,10 @@ h3 { font-size: 21px; line-height: 1.4; font-weight: 600; }
 .cv-detail { font-size: 15px !important; color: var(--muted); }
 .cv-subheading { font-size: 18px; margin: 20px 0 14px; }
 .cv-publications { padding-left: 22px; margin: 0; }
-.cv-publications li { margin-bottom: 22px; padding-left: 8px; }
-.cv-publications li::marker { font-size: 15px; color: var(--muted); }
+.cv-publications > li { margin-bottom: 22px; padding-left: 8px; }
+.cv-publications > li::marker { font-size: 15px; color: var(--muted); }
+.publication-highlights { margin: 8px 0 0; padding-left: 20px; font-size: 15px; line-height: 1.6; color: var(--muted); }
+.publication-highlights li + li { margin-top: 4px; }
 .citation-title { font-size: 18px; font-weight: 500; line-height: 1.5; }
 .citation-title a { color: var(--ink); }
 .cv-section > p { font-size: 17px; }
@@ -160,7 +162,7 @@ h3 { font-size: 21px; line-height: 1.4; font-weight: 600; }
   .entry-heading { display: block; }
   .entry-heading > span { display: block; margin-top: 2px; }
   .cv-publications { padding-left: 17px; }
-  .cv-publications li { padding-left: 4px; }
+  .cv-publications > li { padding-left: 4px; }
   .credits-page { padding: 32px 0 50px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }

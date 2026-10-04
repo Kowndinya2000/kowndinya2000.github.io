@@ -3,16 +3,6 @@
   dates: Jan 2023 – present
   location: New Brunswick, NJ
   description: Conducted research in robot learning for 3D scene understanding, object rearrangement, and placement.
-  highlights:
-  - '[OVSG](https://ovsg-l.github.io/) (CoRL 2023): Built the evaluation pipeline and
-    [DOVE-G](https://doi.org/10.6084/m9.figshare.24307072.v1) benchmark (8 scenarios, 4,000 queries)
-    for context-aware entity grounding; reconstructed 3D scenes and integrated the
-    [ConceptFusion](https://concept-fusion.github.io/) baseline.'
-  - '[LGMCTS](https://lgmcts.github.io/) (IROS 2024): Co-developed the language-guided rearrangement benchmark with multi-pattern
-    goals and initially infeasible scenes; developed the object-selection network, language parser,
-    and evaluation pipeline.'
-  - '[DAP](https://arxiv.org/abs/2409.00499) (IROS 2024): Collected data and evaluated a diffusion-based affordance prediction framework
-    for multi-modal object storage that combines placeable-region sampling with point-cloud correspondences to estimate 6D placement poses.'
 - company: RISHA Lab, IIT Tirupati
   role: Undergraduate Student Researcher
   dates: Dec 2019 – May 2022

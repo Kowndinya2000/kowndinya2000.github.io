@@ -20,7 +20,8 @@ def tex(value):
     escapes = {"\\": r"\textbackslash{}", "&": r"\&", "%": r"\%", "$": r"\$",
                "#": r"\#", "_": r"\_", "{": r"\{", "}": r"\}",
                "~": r"\textasciitilde{}", "^": r"\textasciicircum{}",
-               "–": "--", "—": "---", "’": "'", "×": r"\(\times\)"}
+               "–": "--", "—": "---", "’": "'", "×": r"\(\times\)",
+               "²": r"\textsuperscript{2}"}
     return "".join(escapes.get(c, c) for c in str(value))
 
 
@@ -75,7 +76,12 @@ def main():
         venue = p["venue"]
         if p["status"] == "under-review":
             venue = "Manuscript, " + str(p["year"]) + ". " + venue + "."
-        return r"\paper{" + tex(url) + "}{" + tex(title) + "}{" + author_text + "}{" + tex(venue) + "}{" + resource_text + "}"
+        highlights = ""
+        if p.get("cv_highlights"):
+            highlights = r"\begin{itemize}[leftmargin=12pt,label=\textbullet,itemsep=1pt,parsep=0pt,topsep=2pt]"
+            highlights += "\n".join(r"\item " + tex(point) for point in p["cv_highlights"])
+            highlights += r"\end{itemize}"
+        return r"\paper{" + tex(url) + "}{" + tex(title) + "}{" + author_text + "}{" + tex(venue) + "}{" + resource_text + "}{" + highlights + "}"
 
     lines = [r"{\fontsize{26}{29}\selectfont " + tex(config["name"]) + r"}\par\vspace{5pt}",
              r"{\sffamily " + tex(config["position"]) + r" \enspace\textbar\enspace Rutgers University}\par\vspace{5pt}",
@@ -89,9 +95,7 @@ def main():
         if school.get("detail"):
             body += r"\par {\small " + tex(school["detail"]) + "}"
         lines.append(entry(school["name"], school["dates"], subtitle, body, command="educationentry"))
-    lines.extend([section("Manuscripts under review"), r"\begin{papers}"])
-    lines.extend(paper(p) for p in publications if p["status"] == "under-review")
-    lines.extend([r"\end{papers}", section("Research experience")])
+    lines.append(section("Research experience"))
     for job in read("_data/employment.yml"):
         body = tex(job.get("description", ""))
         if job.get("highlights"):
@@ -99,9 +103,13 @@ def main():
             body += "\n".join(r"\item " + linked_tex(point) for point in job["highlights"])
             body += r"\end{itemize}"
         lines.append(entry(job["company"], job["dates"], job["role"] + " · " + job["location"], body))
-    lines.extend([section("Selected peer-reviewed publications"), r"\begin{papers}"])
-    lines.extend(paper(p) for p in publications if p["status"] == "published")
-    lines.extend([r"\end{papers}", section("Teaching experience"),
+    lines.append(section("Publications"))
+    for heading, first_author in (("First-Author", True), ("Co-Author", False)):
+        lines.extend([r"\cvsubsection{" + heading + "}", r"\begin{papers}"])
+        lines.extend(paper(p) for p in publications
+                     if bool(authors[p["authors"][0]].get("is_me")) == first_author)
+        lines.append(r"\end{papers}")
+    lines.extend([section("Teaching experience"),
                   r"\begin{description}[leftmargin=78pt,labelwidth=70pt,labelsep=8pt,align=left,font=\normalfont,itemsep=3pt,parsep=0pt,topsep=0pt]"])
     for course in data["teaching"]:
         title = link(course["url"], course["course"]) if course.get("url") else tex(course["course"])

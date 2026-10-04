@@ -10,4 +10,7 @@
     {% if include.paper.code %}<a href="{{ include.paper.code }}">[Code]</a>{% endif %}
     {% if include.paper.data %}<a href="{{ include.paper.data }}">[Data]</a>{% endif %}
   </div>
+  {% if include.paper.cv_highlights %}
+  <ul class="publication-highlights">{% for point in include.paper.cv_highlights %}<li>{{ point | escape }}</li>{% endfor %}</ul>
+  {% endif %}
 </li>

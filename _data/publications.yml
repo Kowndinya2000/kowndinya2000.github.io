@@ -12,6 +12,11 @@
   group: robotics
   description: Closing the loop between planning and learning for humanoid control and zero-shot sim-to-real
     manipulation.
+  cv_highlights:
+  - Combined hybrid multi-step value targets, uncertainty-aware MPC, and return-weighted policy distillation
+    to improve planning and learning with a shared world model.
+  - Improved mean return over TD-M(PC)² from 98 to 387 on HumanoidBench balance-hard and from 199 to 466
+    on hurdle; demonstrated zero-shot transfer to KUKA wrench–nut alignment.
   project_page: https://pl-mpc-humanoid.github.io/
   url: https://pl-mpc-humanoid.github.io/
   pub_link: https://arxiv.org/abs/2609.39751
@@ -34,6 +39,11 @@
   group: robotics
   description: One initial plan, memory, and partial feedback guide target retrieval through dense clutter
     when the robot blocks its own view.
+  cv_highlights:
+  - Trained a recurrent policy with behavior cloning and DAgger to combine a fixed teacher plan with
+    partial observations for object retrieval under self-occlusion.
+  - Achieved 90.7% success on 511 simulation scenes and 90% on UR5e; mean hardware task time was 67.3 s
+    versus 192.7 s for the privileged teacher, which achieved 95% success.
   project_page: https://trace-retrieval.github.io/
   url: https://trace-retrieval.github.io/
   pub_link: https://arxiv.org/abs/2609.38857
@@ -47,6 +57,11 @@
   venue: IROS, 2025
   description: Tracking and grasping moving objects with an eye-in-hand camera, a Kalman filter, and reinforcement
     learning.
+  cv_highlights:
+  - Integrated extended Kalman filtering for tracking recovery, a six-stage reinforcement learning curriculum,
+    and grasp retries for dynamic grasping with an eye-in-hand camera.
+  - Achieved 93.3% versus 60.0% grasp success in regular scenes and 80.0% versus 53.3% in obstacle scenes
+    against EARL on UR5e, with 15 trials per condition.
   image: images/karl.png
   pub_link: https://ieeexplore.ieee.org/abstract/document/11245879
   code: https://github.com/arc-l/karl
@@ -64,6 +79,11 @@
   venue: IROS, 2024
   description: Diffusion-based affordance prediction for placing objects in containers with different
     storage modes.
+  cv_highlights:
+  - Collected data and evaluated a pipeline combining diffusion-based affordance sampling with point-cloud
+    correspondence for 6D object placement.
+  - Achieved 98% book-shelving and 94% can-stacking success in simulation, versus RPDiff's 94% and 85%;
+    demonstrated real-robot fruit storage after training on 80 demonstrations.
   image: images/dap.png
   pdf: pdfs/DAP_IROS24.pdf
   authors:
@@ -84,6 +104,11 @@
   venue: IROS, 2024
   description: Turning language instructions into executable object rearrangements through geometric reasoning
     and tree search.
+  cv_highlights:
+  - Co-developed ELGR-Bench and implemented object selection, language parsing, and evaluation for a planner
+    combining language-derived geometric priors with Monte Carlo tree search.
+  - Achieved 79.2% executable-plan success on ELGR-Bench versus 45.2% for LLMs as Few-Shot Planners
+    and 74.1% for separate goal-pose and motion planning; demonstrated rearrangement on UR5e.
   project_page: https://lgmcts.github.io
   image: images/lgmcts.png
   pub_link: https://arxiv.org/abs/2309.15821
@@ -107,6 +132,11 @@
   title: Context-Aware Entity Grounding with Open-Vocabulary 3D Scene Graphs
   venue: CoRL, 2023
   description: Grounding free-form language queries in open-vocabulary 3D scene graphs.
+  cv_highlights:
+  - Built the DOVE-G benchmark (8 scenes, 4,000 queries) and evaluation pipeline for grounding language in
+    open-vocabulary 3D scene graphs; reconstructed scenes and integrated ConceptFusion.
+  - Achieved 65.75% top-1 3D grounding success on DOVE-G versus OVIR-3D's 41.5%, using full queries
+    and a 3D IoU threshold of 0.5.
   project_page: https://ovsg-l.github.io
   image: images/ovsg-q.png
   pub_link: https://arxiv.org/abs/2309.15940
