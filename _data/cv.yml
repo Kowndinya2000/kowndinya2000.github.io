@@ -18,13 +18,13 @@ teaching:
   level: Undergraduate
   url: https://kowndinya2000.github.io/cs440-fa26/
 reviewing:
-- venue: IROS
+- venue: IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
   years: '2025, 2026'
-- venue: CoRL
+- venue: Conference on Robot Learning (CoRL)
   years: '2026'
-- venue: IJRR
+- venue: The International Journal of Robotics Research (IJRR)
   years: '2026'
-- venue: ICAPS
+- venue: International Conference on Automated Planning and Scheduling (ICAPS)
   years: '2026'
 leadership:
 - name: Google Developer Student Clubs, IIT Tirupati
